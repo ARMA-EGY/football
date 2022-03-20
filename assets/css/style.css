@@ -1667,7 +1667,7 @@ td.highlight {
 
 .btn-primary {
   color: #fff;
-  background-color: #275fbd;
+  background-color: #042b64;
   border-color: transparent;
 }
 .btn-primary:focus, .btn-primary.focus {
@@ -10179,7 +10179,7 @@ body {
 
 /* Header Primary */
 .header__primary {
-  background-color: #275fbd;
+  background-color: #042b64;
   position: relative;
 }
 .header--layout-1 .header__primary::after, .header--layout-2 .header__primary::after, .header--layout-3 .header__primary::after, .header--layout-4 .header__primary::after, .header--layout-5 .header__primary::after {
@@ -10189,7 +10189,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #275fbd;
+  background-color: #042b64;
 }
 .header--layout-1 .header__primary::after {
   width: 50%;
@@ -10201,7 +10201,7 @@ body {
 .header__primary-inner {
   position: relative;
   z-index: 1;
-  background-color: #275fbd;
+  background-color: #042b64;
 }
 .header--layout-1 .header__primary-inner::before {
   content: "";
@@ -10361,7 +10361,7 @@ input.header-mobile__search-control:focus {
     position: relative;
     z-index: 2;
     height: 100px;
-    background-color: #1e2024;
+    background-color: #042b64;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
@@ -11218,7 +11218,7 @@ input.header-mobile__search-control:focus {
     overflow: auto;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    background-color: #1e2024;
+    background-color: #042b64;
   }
   .site-wrapper--has-overlay .main-nav {
     -webkit-transform: translateX(0);
@@ -12626,7 +12626,6 @@ input.header-mobile__search-control:focus {
 */
 .page-heading {
   background-color: #1e2024;
-  background-image: url("../images/soccer/page-heading.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -24735,7 +24734,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
   right: 0;
   bottom: 0;
   top: 0;
-  background-image: linear-gradient(135deg, transparent, transparent 57%, #e2ff2f 57%, #e2ff2f 78%, transparent 78%, transparent), linear-gradient(135deg, transparent, transparent 33%, rgba(255, 255, 255, 0.15) 33%, rgba(255, 255, 255, 0.15) 57%, transparent 57%, transparent), linear-gradient(135deg, rgba(24, 146, 237, 0.82), rgba(24, 146, 237, 0.82) 47%, #14c96b 47%, #14c96b);
+  background-image: linear-gradient(135deg, rgba(24, 146, 237, 0.82), rgba(24, 146, 237, 0.82) 47%, #14c96b 47%, #14c96b);
   z-index: 1;
 }
 .team-roster--card-compact .team-roster__item .team-roster__content-wrapper:hover .team-roster__player-img img {
@@ -24765,7 +24764,6 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
   width: 100%;
 }
 .team-roster--card-compact .team-roster__item .team-roster__player-img img {
-  margin-top: -20px;
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -34680,7 +34678,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
     right: 0;
   }
 }
-.game-result__score-result--winner::before {
+/* .game-result__score-result--winner::before {
   content: "";
   display: block;
   position: absolute;
@@ -34693,7 +34691,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
   border-bottom: 8px solid transparent;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
+} */
 
 .game-result__score-result--loser {
   color: #9a9da2;
@@ -37333,6 +37331,11 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
   background: rgb(0 0 0 / 40%);
 }
 
+.br-15
+{
+  border-radius: 15px;
+}
+
 .br-30
 {
   border-radius: 30px;
@@ -37425,7 +37428,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
 
 .bg-primary 
 {
-  background-color: #275fbd !important;
+  background-color: #042b64 !important;
 }
 
 .section-title p 
@@ -37433,4 +37436,14 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
   font-size: 18px;
   color: #fff;
   margin: 0;
+}
+
+.overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 30%);
 }

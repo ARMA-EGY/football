@@ -1027,12 +1027,11 @@
 				$slick_hero_slider.slick({
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					arrows: false,
+					arrows: true,
 					fade: true,
 					autoplay: true,
-					autoplaySpeed: 8000,
+					autoplaySpeed: 3000,
 					rows: 0,
-					asNavFor: '.hero-slider-thumbs',
 
 					responsive: [
 						{
@@ -1043,13 +1042,7 @@
 						}
 					]
 				});
-				$('.hero-slider-thumbs').slick({
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					asNavFor: $slick_hero_slider,
-					focusOnSelect: true,
-					rows: 0,
-				});
+
 			}
 
 
@@ -1946,32 +1939,13 @@
 					type: 'line',
 					data: {
 						labels: ["Aug 8", "Aug 15", "Aug 21", "Aug 28", "Sep 4", "Sep 19", "Sep 26", "Oct 3", "Oct 10", "Oct 16", "Oct 23", "Oct 30"],
-						datasets: [{
-							label: 'PREV RECORD',
-							fill: true,
-							lineTension: 0.5,
-							backgroundColor: "rgba(194,255,31,0.8)",
-							borderWidth: 2,
-							borderColor: "#c2ff1f",
-							borderCapStyle: 'butt',
-							borderDashOffset: 0.0,
-							borderJoinStyle: 'bevel',
-							pointRadius: 0,
-							pointBorderWidth: 0,
-							pointHoverRadius: 5,
-							pointHoverBackgroundColor: "#fff",
-							pointHoverBorderColor: "#c2ff1f",
-							pointHoverBorderWidth: 5,
-							pointHitRadius: 10,
-							data: [52, 71, 40, 53, 62, 40, 44, 58, 38, 64, 46, 70, 75],
-							spanGaps: false,
-						}, {
+						datasets: [ {
 							label: 'THIS YEAR',
 							fill: true,
 							lineTension: 0.5,
-							backgroundColor: "rgba(56,169,255,0.8)",
+							backgroundColor: "rgba(56,169,255,0.2)",
 							borderWidth: 2,
-							borderColor: "#38a9ff",
+							borderColor: "#042b64",
 							borderCapStyle: 'butt',
 							borderDashOffset: 0.0,
 							borderJoinStyle: 'bevel',
@@ -1979,7 +1953,7 @@
 							pointBorderWidth: 0,
 							pointHoverRadius: 5,
 							pointHoverBackgroundColor: "#fff",
-							pointHoverBorderColor: "#38a9ff",
+							pointHoverBorderColor: "#042b64",
 							pointHoverBorderWidth: 5,
 							pointHitRadius: 10,
 							data: [71, 52, 87, 53, 17, 62, 56, 37, 91, 48, 75, 64, 78],

@@ -3544,7 +3544,7 @@ td.highlight {
   white-space: nowrap;
   vertical-align: baseline;
   padding: 0.5em 1.1em;
-  font-size: 8px;
+  font-size: 9px;
   border-radius: 0.25em;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -20062,7 +20062,7 @@ ul.posts:not(.post-grid) {
 }
 @media (min-width: 1200px) {
   .widget-player--soccer .widget-player__last-name {
-    font-size: 36px;
+    font-size: 25px;
   }
 }
 .widget-player--soccer .widget-player__content-inner {
@@ -21882,8 +21882,8 @@ td.team-leader__goals {
 
 .team-stats__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   max-width: 50%;
   border-style: solid;
   border-color: #e4e7ed;
@@ -26078,7 +26078,7 @@ table.alc-event-result-labels > tbody > tr > td.alc-results .label--basic {
 }
 
 .player-info__last-name {
-  color: #14c96b;
+  color: #38a9ff;
 }
 
 .player-info-details {
@@ -37597,4 +37597,586 @@ ol, ul
   {
     max-height: 150px;
   }
+}
+
+.club_btn
+{
+  position: relative;
+}
+
+.club_btn i
+{
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 11px;
+  transition: right .2s;
+}
+
+.club_card
+{
+  overflow: hidden;
+}
+
+.club_card .card-img-top
+{ 
+  transition: all 0.5s linear;
+}
+
+.club_card:hover .club_btn i
+{
+  right: 0px !important;
+}
+
+.club_card:hover .card-img-top
+{
+  transform: scale(1.1);
+}
+
+
+.club_card .card-body
+{
+  position: relative;
+}
+
+.club_img
+{
+  position: absolute;
+  top: -65px;
+  right: 50%;
+  margin-right: -40px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.club_img img
+{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.playerOverviewCard .squadPlayerStats .nationality dl 
+{
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.playerOverviewCard li 
+{
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.playerOverviewCard dt 
+{
+  float: left;
+  color: #76766f;
+  margin: 0px;
+}
+
+.playerOverviewCard dl 
+{
+  margin: 0px;
+}
+
+.playerOverviewCard dd 
+{
+  font-weight: 400;
+  float: right;
+  padding: 2px 5px !important;
+}
+
+.playerOverviewCard dd, .playerOverviewCard dt 
+{
+  padding: 0.6rem;
+  margin: 0px;
+}
+
+.playerOverviewCard .squadPlayerStats .nationality .flag 
+{
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.playerOverviewCard .squadPlayerStats .nationality .flag img
+{
+  max-height: 17px;
+}
+
+.playerOverviewCard li:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.squadPlayerStats 
+{
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.playerOverviewCard .squadPlayerHeader 
+{
+  background: #eaeaea;
+  position: relative;
+  padding: 1rem 1rem 0;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.playerOverviewCard .img 
+{
+  display: inline-block;
+  vertical-align: middle;
+  width: 5rem;
+  float: right;
+}
+
+.playerOverviewCard .playerCardInfo 
+{
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.playerOverviewCard .name 
+{
+  font-size: 1.1rem;
+  margin: 0.2rem 0 0.5rem;
+  padding-right: 9rem;
+  line-height: 1;
+}
+
+.playerOverviewCard .position, .playerOverviewCard .squadPlayerStats 
+{
+  font-size: 1rem;
+}
+
+.playerOverviewCard .number 
+{
+  font-size: 1.2rem;
+}
+
+
+.player_btn
+{
+  position: relative;
+}
+
+.player_btn i
+{
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 11px;
+  transition: right .2s;
+}
+
+.player_card:hover .player_btn i
+{
+  right: 0px !important;
+}
+
+.player_btn:hover
+{
+  color: #1892ed;
+}
+
+.topStatList 
+{
+  border-top-color: #6caee0!important;
+  clear: both;
+  display: table;
+  margin: 0 auto 3rem;
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 400;
+  border-radius: 0 0 3px 3px;
+  position: relative;
+  background: #fff;
+}
+
+.topStatList .topStat 
+{
+  border-left: 1px solid #e8e8e8;
+  padding: 1rem 2rem;
+  display: table-cell;
+  color: #38a9ff;
+}
+
+.topStatList .allStatContainer 
+{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: block;
+  color: #333;
+}
+
+.topStatList .topStat:last-child 
+{
+  border-right: 1px solid #e8e8e8;
+}
+
+@media (max-width: 767px) 
+{
+  .topStatList 
+  {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .topStatList .topStat:nth-child(-n+3) 
+  {
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .topStatList .topStat 
+  {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .topStatList .topStat 
+  {
+    padding: 1rem;
+    display: block;
+    width: 33.33%;
+    float: left;
+  }
+}
+
+.player_stat_card .widget-player__photo img
+{
+  max-width: 85%;
+}
+
+.matches .date 
+{
+  display: block;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 700;
+  color: #555;
+}
+
+.matches .matchList 
+{
+  margin-bottom: 6rem;
+  border-top: 1px solid #efefef;
+  clear: both;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fixtures .matchList>li, .fixtures .matchList>li:last-child {
+  border-bottom: 1px solid #efefef;
+}
+
+.matchFixtureContainer 
+{
+  position: relative;
+}
+
+.matches .matchList li 
+{
+  list-style-type: none;
+}
+
+.fixture, .fixture--large 
+{
+  display: block;
+  color: #242424;
+  text-decoration: none;
+  position: relative;
+}
+
+.fixture--large .overview, .fixture .overview 
+{
+  display: block;
+  padding: 1.0rem 0;
+}
+
+.fixture--large span, .fixture--large time, .fixture span, .fixture time 
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fixture--large .highlightName, .fixture--large .teams, .fixture .highlightName, .fixture .teams 
+{
+  margin-right: -4px;
+}
+
+.fixture .teams 
+{
+  width: 42%;
+}
+
+.fixture--large .teams, .fixture .teams 
+{
+  position: relative;
+  font-size: 0;
+}
+
+.fixture--large span, .fixture--large time, .fixture span, .fixture time 
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fixture--large .team:first-of-type, .fixture .team:first-of-type 
+{
+  text-align: right;
+  padding-left: 0;
+  padding-right: 7.8rem;
+}
+
+.fixture--large .team, .fixture .team 
+{
+  width: 50%;
+  padding-left: 7.8rem;
+  position: relative;
+}
+
+.fixture--large .teamName, .fixture .teamName 
+{
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.fixture--large .team .shortname, .fixture .team .shortname 
+{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixture--large .team:first-of-type .badge, .fixture .team:first-of-type .badge 
+{
+  right: 4rem;
+}
+
+.fixture--large .badge, .fixture .badge 
+{
+  position: absolute;
+  top: 50%;
+  margin-top: -12.5px;
+}
+
+.badge-image-container .badge-image--25 
+{
+  width: 30px;
+}
+
+.badge-image-container .badge-image 
+{
+  vertical-align: middle;
+}
+
+.fixture--large .overview .score, .fixture--large .overview time, .fixture .overview .score, .fixture .overview time 
+{
+  line-height: 2.0rem;
+}
+
+.fixture--large time, .fixture time 
+{
+  background: #fff;
+  color: #2f2f2f;
+  font-size: 1.3rem;
+  border: 1px solid #efefef;
+  margin-top: -1.7rem;
+  border-radius: 5px;
+}
+
+.fixture--large .score, .fixture--large time, .fixture .score, .fixture time 
+{
+  width: 6.6rem;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -3.2rem;
+  margin-top: -1.5rem;
+}
+
+.fixture--large .stadiumName, .fixture .stadiumName 
+{
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  min-width: 16rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 25%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  border-left-color: rgba(0,0,0,.15);
+}
+
+.fixture--large .stadiumName .stadium-b, .fixture .stadiumName .stadium-b 
+{
+  margin-right: 1rem;
+}
+
+.icn.stadium-b 
+{
+  width: 23px;
+  height: 14px;
+  background-position: -728px -552px;
+}
+
+.icn 
+{
+  background: url(https://www.premierleague.com/resources/prod/v6.92.0-3875/i/sprites/global-sprite@x2.png) no-repeat;
+  display: block;
+  background-size: 799px 778px
+}
+
+.fixture--large .stadiumName, .fixture .stadiumName 
+{
+  padding-left: 1rem;
+  font-size: 1.0rem;
+  min-width: 16rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 25%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  border-left-color: rgba(0,0,0,.15);
+  align-items: center;
+}
+
+.matches .matchList>li, .matches .matchList>li:last-child 
+{
+  border-bottom: 1px solid #efefef;
+}
+
+.fixture--large .team:not(:first-of-type) .badge, .fixture .team:not(:first-of-type) .badge 
+{
+  left: 4.3rem;
+}
+
+.fixtures .btn.quickView 
+{
+  padding: 0 1rem;
+}
+
+.matches .btn
+{
+  text-align: center;
+  padding: 0 3.6rem;
+  text-decoration: none;
+  background: #37003c;
+  color: #fff;
+  display: block;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 4rem;
+  border-radius: 3px;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 400;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.matches .quickView 
+{
+  position: absolute;
+  top: 0.8rem;
+  right: 5rem;
+  line-height: 2rem;
+  background: #fff;
+  border: 1px solid #efefef;
+  font-size: 0.8rem;
+  color: #2f2f2f;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 400;
+  padding: 0px 20px;
+}
+
+.fixture:hover 
+{
+  background: linear-gradient(270deg,#38a9ff,#042b64 45%);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.fixture:hover .stadium-b {
+  content: "";
+  background: url(https://www.premierleague.com/resources/prod/v6.92.0-3875/i/sprites/global-sprite.png) -423px -488px no-repeat;
+  width: 23px;
+  height: 14px;
+}
+
+.matches .quickView i
+{
+  position: relative;
+  transition: right .2s;
+}
+
+.fixture:hover .matches .quickView i
+{
+  right: -10px;
+}
+
+.fixture .overview .score
+{
+  background: #38a9ff;
+  font-size: 1.0rem;
+  color: #fff;
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: 400;
+  line-height: 2.0rem;
+  border-radius: 5px;
+}
+
+.fixture .overview .score span
+{
+  padding: 0 0.7rem;
+  font-weight: 400;
+  vertical-align: initial;
+  color: #38a9ff;
+  position: relative;
+}
+
+.fixture .overview .score span:before {
+  content: " ";
+  display: block;
+  width: 0.1rem;
+  height: 1.4rem;
+  background: hsla(0,0%,100%,.2);
+  position: absolute;
+  top: 0.3rem;
+  left: 50%;
 }

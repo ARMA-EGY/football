@@ -63,6 +63,8 @@
 	var $chart_doughnut_esports = $('#chart-doughnut-esports');
 	var $chart_doughnut_soccer1 = $('#chart-doughnut-soccer-1');
 	var $chart_doughnut_soccer2 = $('#chart-doughnut-soccer-2');
+	var $chart_doughnut_soccer3 = $('#chart-doughnut-soccer-3');
+	var $chart_doughnut_soccer4 = $('#chart-doughnut-soccer-4');
 	var $chart_player_stats = $('#player-stats');
 	var $chart_event_cols = $('#alc-event-chart-cols');
 	var $content_filter = $('.content-filter');
@@ -2508,10 +2510,58 @@
 					}
 				};
 
+				var dataSoccer2 = {
+					type: 'doughnut',
+					data: {
+						labels: ["Wins", "Draws", "Losses"],
+						datasets: [{
+							label: 'Total Plays',
+							data: [14, 3, 8],
+							backgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							hoverBackgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							borderWidth: 0
+						}]
+					},
+					options: {
+						legend: {
+							display: false,
+							labels: {
+								boxWidth: 8,
+								fontSize: 12,
+								fontColor: '#fff',
+								fontStyle: 'bold',
+								fontFamily: 'Montserrat, sans-serif',
+								padding: 20,
+							}
+						},
+						tooltips: {
+							backgroundColor: "rgba(0,0,0,0.8)",
+							bodyFontFamily: 'Montserrat, sans-serif',
+							bodyFontSize: 10,
+							bodySpacing: 0,
+							cornerRadius: 2,
+							xPadding: 10,
+							displayColors: false,
+						},
+						cutoutPercentage: 90,
+						elements: {
+							center: {
+								text: '25',
+								fontStyle: 'Montserrat, sans-serif', // Default is Arial
+								sidePadding: 20,
+								fontWeight: 'bold',
+							}
+						}
+					}
+				};
+
 				var ctxdoughnut_soccer_1 = $chart_doughnut_soccer1;
+				var ctxdoughnut_soccer_3 = $chart_doughnut_soccer3;
 				var gamesHistorySoccer1 = new Chart(ctxdoughnut_soccer_1, dataSoccer1);
+				var gamesHistorySoccer2 = new Chart(ctxdoughnut_soccer_3, dataSoccer2);
 
 				document.getElementById('chartDoughnutLegendSoccer1').innerHTML = gamesHistorySoccer1.generateLegend();
+				document.getElementById('chartDoughnutLegendSoccer2').innerHTML = gamesHistorySoccer2.generateLegend();
 			}
 
 			if ( $chart_doughnut_soccer2.exists() ) {
@@ -2610,6 +2660,197 @@
 				document.getElementById('chartDoughnutLegendSoccer2').innerHTML = gamesHistorySoccer2.generateLegend();
 			}
 
+			if ( $chart_doughnut_soccer3.exists() ) {
+
+				Chart.pluginService.register({
+					beforeDraw: function (chart) {
+						if (chart.config.options.elements.center) {
+							//Get ctx from string
+							var ctx = chart.chart.ctx;
+
+							//Get options from the center object in options
+							var centerConfig = chart.config.options.elements.center;
+							var fontStyle = centerConfig.fontStyle || 'Montserrat, sans-serif';
+							var txt = centerConfig.text;
+							var color = centerConfig.color || '#31404b';
+							var fontWeight = centerConfig.fontWeight || 'bold';
+							var sidePadding = centerConfig.sidePadding || 20;
+							var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2);
+							//Start with a base font of 56px
+							ctx.font = "76px " + fontStyle;
+
+							//Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+							var stringWidth = ctx.measureText(txt).width;
+							var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+							// Find out how much the font can grow in width.
+							var widthRatio = elementWidth / stringWidth;
+							var newFontSize = Math.floor(30 * widthRatio);
+							var elementHeight = (chart.innerRadius * 2);
+
+							// Pick a new font size so it will not be larger than the height of label.
+							var fontSizeToUse = Math.min(newFontSize, elementHeight);
+
+							//Set font settings to draw it correctly.
+							ctx.textAlign = 'center';
+							ctx.textBaseline = 'middle';
+							var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+							var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+							ctx.font = fontWeight + " " + fontSizeToUse + "px " + fontStyle;
+							ctx.fillStyle = color;
+
+							//Draw text in center
+							ctx.fillText(txt, centerX, centerY);
+						}
+					}
+				});
+
+				var dataSoccer3 = {
+					type: 'doughnut',
+					data: {
+						labels: ["Wins", "Draws", "Losses"],
+						datasets: [{
+							label: 'Total Plays',
+							data: [14, 3, 8],
+							backgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							hoverBackgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							borderWidth: 0
+						}]
+					},
+					options: {
+						legend: {
+							display: false,
+							labels: {
+								boxWidth: 8,
+								fontSize: 12,
+								fontColor: '#fff',
+								fontStyle: 'bold',
+								fontFamily: 'Montserrat, sans-serif',
+								padding: 20,
+							}
+						},
+						tooltips: {
+							backgroundColor: "rgba(0,0,0,0.8)",
+							bodyFontFamily: 'Montserrat, sans-serif',
+							bodyFontSize: 10,
+							bodySpacing: 0,
+							cornerRadius: 2,
+							xPadding: 10,
+							displayColors: false,
+						},
+						cutoutPercentage: 90,
+						elements: {
+							center: {
+								text: '25',
+								fontStyle: 'Montserrat, sans-serif', // Default is Arial
+								sidePadding: 20,
+								fontWeight: 'bold',
+							}
+						}
+					}
+				};
+
+				var ctxdoughnut_soccer_3 = $chart_doughnut_soccer3;
+				var gamesHistorySoccer3 = new Chart(ctxdoughnut_soccer_3, dataSoccer3);
+
+				document.getElementById('chartDoughnutLegendSoccer3').innerHTML = gamesHistorySoccer3.generateLegend();
+			}
+
+			if ( $chart_doughnut_soccer4.exists() ) {
+
+				Chart.pluginService.register({
+					beforeDraw: function (chart) {
+						if (chart.config.options.elements.center) {
+							//Get ctx from string
+							var ctx = chart.chart.ctx;
+
+							//Get options from the center object in options
+							var centerConfig = chart.config.options.elements.center;
+							var fontStyle = centerConfig.fontStyle || 'Montserrat, sans-serif';
+							var txt = centerConfig.text;
+							var color = centerConfig.color || '#31404b';
+							var fontWeight = centerConfig.fontWeight || 'bold';
+							var sidePadding = centerConfig.sidePadding || 20;
+							var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2);
+							//Start with a base font of 56px
+							ctx.font = "76px " + fontStyle;
+
+							//Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+							var stringWidth = ctx.measureText(txt).width;
+							var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+							// Find out how much the font can grow in width.
+							var widthRatio = elementWidth / stringWidth;
+							var newFontSize = Math.floor(30 * widthRatio);
+							var elementHeight = (chart.innerRadius * 2);
+
+							// Pick a new font size so it will not be larger than the height of label.
+							var fontSizeToUse = Math.min(newFontSize, elementHeight);
+
+							//Set font settings to draw it correctly.
+							ctx.textAlign = 'center';
+							ctx.textBaseline = 'middle';
+							var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+							var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+							ctx.font = fontWeight + " " + fontSizeToUse + "px " + fontStyle;
+							ctx.fillStyle = color;
+
+							//Draw text in center
+							ctx.fillText(txt, centerX, centerY);
+						}
+					}
+				});
+
+				var dataSoccer4 = {
+					type: 'doughnut',
+					data: {
+						labels: ["Wins", "Draws", "Losses"],
+						datasets: [{
+							label: 'Total Playes',
+							data: [6, 1, 9],
+							backgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							hoverBackgroundColor: ["#00e3d0", "#ffd200", "#ff5d0e"],
+							borderWidth: 0
+						}]
+					},
+					options: {
+						legend: {
+							display: false,
+							labels: {
+								boxWidth: 8,
+								fontSize: 12,
+								fontColor: '#fff',
+								fontStyle: 'bold',
+								fontFamily: 'Montserrat, sans-serif',
+								padding: 20,
+							}
+						},
+						tooltips: {
+							backgroundColor: "rgba(0,0,0,0.8)",
+							bodyFontFamily: 'Montserrat, sans-serif',
+							bodyFontSize: 10,
+							bodySpacing: 0,
+							cornerRadius: 2,
+							xPadding: 10,
+							displayColors: false,
+						},
+						cutoutPercentage: 90,
+						elements: {
+							center: {
+								text: '16',
+								fontStyle: 'Montserrat, sans-serif', // Default is Arial
+								sidePadding: 20,
+								fontWeight: 'bold',
+							}
+						}
+					}
+				};
+
+				var ctxdoughnut_soccer_4 = $chart_doughnut_soccer4;
+				var gamesHistorySoccer4 = new Chart(ctxdoughnut_soccer_4, dataSoccer4);
+
+				document.getElementById('chartDoughnutLegendSoccer4').innerHTML = gamesHistorySoccer4.generateLegend();
+			}
 
 			if ( $chart_player_stats.exists() ) {
 				var radar_data = {

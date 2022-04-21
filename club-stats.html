@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Football | Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sports Club, League and News">
+	<meta name="author" content="ARMA Software">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body >
+
+	<div class="site-wrapper clearfix">
+		<div class="site-overlay"></div>
+
+		<!-- Header
+		================================================== -->
+		
+		<!-- Header Mobile -->
+		<div class="header-mobile clearfix" id="header-mobile">
+			<div class="header-mobile__logo">
+				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+			</div>
+			<div class="header-mobile__inner">
+				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+				<span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
+			</div>
+		</div>
+		
+		<!-- Header Desktop -->
+		<header class="header header--layout-1">
+		
+			<!-- Header Primary -->
+			<div class="header__primary">
+				<div class="container">
+					<div class="header__primary-inner">
+		
+						<!-- Header Logo -->
+						<div class="header-logo">
+							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+						</div>
+						<!-- Header Logo / End -->
+		
+						<!-- Main Navigation -->
+						<nav class="main-nav clearfix">
+							<ul class="main-nav__list">
+								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class="active"><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
+								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+							</ul>
+		
+							<!-- Social Links -->
+							<ul class="social-links social-links--inline social-links--main-nav">
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+							<!-- Social Links / End -->
+		
+							<!-- Pushy Panel Toggle -->
+							<a href="#" data-toggle="modal" data-target="#modal-login-register-tabs" class="pushy-panel__toggle text-center text-white">
+								<i class="fa fa-sign-in-alt"></i> Login
+							</a>
+							<!-- Pushy Panel Toggle / Eng -->
+						</nav>
+						<!-- Main Navigation / End -->
+					</div>
+				</div>
+			</div>
+			<!-- Header Primary / End -->
+		
+		</header>
+		<!-- Header / End -->
+		
+
+		<!-- Page Heading
+		================================================== -->
+		<div class="page-heading" style="background-image: url('assets/images/page-heading.jpeg');">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<h1 class="page-heading__title"><img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt=""> Al Ittihad FC Jeddah </h1>
+						<h6 class="text-white">King Fahd Stadium</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page Heading / End -->
+		
+		
+		<!-- Team Pages Filter -->
+		<nav class="content-filter">
+			<div class="container">
+				<a href="#" class="content-filter__toggle"></a>
+				<ul class="content-filter__list">
+					<li class="content-filter__item"><a href="club.html" class="content-filter__link">Overview</a></li>
+					<li class="content-filter__item"><a href="club-squad.html" class="content-filter__link">Squad</a></li>
+					<li class="content-filter__item "><a href="club-schedule.html" class="content-filter__link">Schedule</a></li>
+					<li class="content-filter__item "><a href="club-results.html" class="content-filter__link">Latest Results</a></li>
+					<li class="content-filter__item content-filter__item--active"><a href="club-stats.html" class="content-filter__link">Stats</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Team Pages Filter / End -->
+
+		
+		<!-- Content
+		================================================== -->
+		<div class="site-content bg-light">
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="topStatList">
+						<div class="topStat">
+							<span class="stat">Matches played   <span class="allStatContainer statmatches_played" data-stat="wins,draws,losses">31</span>
+						</span>
+						</div>
+						<div class="topStat">
+							<span class="stat">Wins   <span class="allStatContainer statwins" data-stat="wins">23</span>
+						</span>
+						</div>
+						<div class="topStat">
+							<span class="stat">Losses   <span class="allStatContainer statlosses" data-stat="losses">3</span>
+						</span>
+						</div>
+						<div class="topStat">
+							<span class="stat">Goals   <span class="allStatContainer statgoals" data-stat="goals">72</span>
+						</span>
+						</div>
+						<div class="topStat">
+							<span class="stat">Goals Conceded   <span class="allStatContainer statgoals_conceded" data-stat="goals_conceded">20</span>
+						</span>
+						</div>
+						<div class="topStat">
+							<span class="stat">Clean sheets   <span class="allStatContainer statclean_sheet" data-stat="clean_sheet">18</span>
+						</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+
+				<div class="row justify-content-center">
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Attack</h4>
+							</div>
+							<div class="widget__content card__content">
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Goals</th>
+												<th class="team-leader__goals text-primary">72</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Goals per match</th>
+												<th class="team-leader__goals text-primary">2.32</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Total Shots</th>
+												<th class="team-leader__goals text-primary">565</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Shots on target</th>
+												<th class="team-leader__goals text-primary">208</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Shooting accuracy</th>
+												<th class="team-leader__goals text-primary">37%</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Penalties scored</th>
+												<th class="team-leader__goals text-primary">6</th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+					
+					<!-- <div class="col-md-3 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
+						<div class="card text-center player_card playerOverviewCard hvr-float-shadow m-2" style="width: 95%;">
+							<div class="card-header">
+								<h5 class="mb-0">Defence</h5>
+							</div>
+							<div class="card-body p-0">
+								<ul class="squadPlayerStats">
+									<li>
+										<dl>
+											<dt class="label text-dark">Clean sheets</dt>
+											<dd class="info font-weight-bold text-primary">18</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Goals Conceded</dt>
+											<dd class="info font-weight-bold text-primary">20</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Goals conceded per match</dt>
+											<dd class="info font-weight-bold text-primary">0.65</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Saves</dt>
+											<dd class="info font-weight-bold text-primary">54</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Tackles</dt>
+											<dd class="info font-weight-bold text-primary">397</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Tackle success</dt>
+											<dd class="info font-weight-bold text-primary">57%</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Blocked shots</dt>
+											<dd class="info font-weight-bold text-primary">163</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="label text-dark">Interceptions</dt>
+											<dd class="info font-weight-bold text-primary">223</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1300">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Defence</h4>
+							</div>
+							<div class="widget__content card__content">
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Clean sheets</th>
+												<th class="team-leader__goals text-primary">18</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Goals Conceded</th>
+												<th class="team-leader__goals text-primary">20</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Goals conceded per match</th>
+												<th class="team-leader__goals text-primary">0.65</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Saves</th>
+												<th class="team-leader__goals text-primary">54</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Tackles</th>
+												<th class="team-leader__goals text-primary">397</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Tackle success</th>
+												<th class="team-leader__goals text-primary">57%</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Blocked shots</th>
+												<th class="team-leader__goals text-primary">163</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Interceptions</th>
+												<th class="team-leader__goals text-primary">223</th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1600">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Team Play</h4>
+							</div>
+							<div class="widget__content card__content">
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Passes</th>
+												<th class="team-leader__goals text-primary">21,350</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Passes per match</th>
+												<th class="team-leader__goals text-primary">688.71</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Pass accuracy</th>
+												<th class="team-leader__goals text-primary">90%</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Crosses</th>
+												<th class="team-leader__goals text-primary">208</th>
+											</tr>
+											<tr>
+												<th class="team-leader__type">Cross accuracy</th>
+												<th class="team-leader__goals text-primary">37%</th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="my-5">
+
+			<div class="container">
+
+				<div class="row justify-content-center">
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Goals</h4>
+							</div>
+							<div class="widget__content card__content">
+								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
+									<div class="widget__content card__content" style="border-radius: 0px;">
+										<div class="widget-player__ribbon">
+											<div class="fas fa-star"></div>
+										</div>
+										<figure class="widget-player__photo">
+											<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+										</figure>
+										<header class="widget-player__header clearfix">
+											<div class="widget-player__number">11</div>
+											<h4 class="widget-player__name">
+												<span class="widget-player__first-name">Mohamed</span>
+												<span class="widget-player__last-name">Salah</span>
+											</h4>
+										</header>
+										<div class="widget-player__content">
+											<div class="widget-player__content-inner">
+								
+												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
+													<div class="widget-player__stat-number">20</div>
+													<h6 class="widget-player__stat-label">Goals</h6>
+												</div>
+												<div class="widget-player__stat widget-player__games" style="width: 50%;">
+													<div class="widget-player__stat-number">18</div>
+													<h6 class="widget-player__stat-label">Play</h6>
+												</div>
+											</div>
+								
+											<div class="widget-player__content-alt">
+												<!-- Progress: Shot Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">SHOT ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">96%</div>
+												</div>
+												<!-- Progress: Shot Accuracy / End -->
+								
+												<!-- Progress: Pass Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">PASS ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">74%</div>
+												</div>
+												<!-- Progress: Pass Accuracy / End -->
+											</div>
+										</div>
+								
+									</div>
+								</aside>
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Player</th>
+												<th class="team-leader__goals">G</th>
+												<th class="team-leader__gp">P</th>
+												<th class="team-leader__avg">AVG</th>
+											</tr>
+										</thead>
+										<tbody>
+						
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">2.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">James Messinal</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">11</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="91">
+															<span class="circular__percents">0.91</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">3.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">David Hawkins</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">10</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="83">
+															<span class="circular__percents">0.83</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">4.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">Griffin Peterson</h5>
+															<span class="team-leader__player-position">Midfielder</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">8</td>
+												<td class="team-leader__gp">10</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="80">
+															<span class="circular__percents">0.80</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+						
+										</tbody>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1300">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Assists</h4>
+							</div>
+							<div class="widget__content card__content">
+								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
+									<div class="widget__content card__content" style="border-radius: 0px;">
+										<div class="widget-player__ribbon">
+											<div class="fas fa-star"></div>
+										</div>
+										<figure class="widget-player__photo">
+											<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p61366.png" alt="">
+										</figure>
+										<header class="widget-player__header clearfix">
+											<div class="widget-player__number">07</div>
+											<h4 class="widget-player__name">
+												<span class="widget-player__first-name">Kevin</span>
+												<span class="widget-player__last-name">De Bruyne</span>
+											</h4>
+										</header>
+										<div class="widget-player__content">
+											<div class="widget-player__content-inner">
+								
+												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
+													<div class="widget-player__stat-number">12</div>
+													<h6 class="widget-player__stat-label">Assists</h6>
+												</div>
+												<div class="widget-player__stat widget-player__games" style="width: 50%;">
+													<div class="widget-player__stat-number">16</div>
+													<h6 class="widget-player__stat-label">Play</h6>
+												</div>
+											</div>
+								
+											<div class="widget-player__content-alt">
+												<!-- Progress: Shot Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">SHOT ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">96%</div>
+												</div>
+												<!-- Progress: Shot Accuracy / End -->
+								
+												<!-- Progress: Pass Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">PASS ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">74%</div>
+												</div>
+												<!-- Progress: Pass Accuracy / End -->
+											</div>
+										</div>
+								
+									</div>
+								</aside>
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Player</th>
+												<th class="team-leader__goals">A</th>
+												<th class="team-leader__gp">P</th>
+												<th class="team-leader__avg">AVG</th>
+											</tr>
+										</thead>
+										<tbody>
+						
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">2.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">James Messinal</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">11</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="91">
+															<span class="circular__percents">0.91</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">3.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">David Hawkins</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">10</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="83">
+															<span class="circular__percents">0.83</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">4.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">Griffin Peterson</h5>
+															<span class="team-leader__player-position">Midfielder</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">8</td>
+												<td class="team-leader__gp">10</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="80">
+															<span class="circular__percents">0.80</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+						
+										</tbody>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+
+					<div class="col-md-4 aos-init aos-animate" data-aos="flip-up" data-aos-duration="1600">
+						<aside class="widget widget--sidebar card card--has-table widget-leaders hvr-float-shadow" style="width: 98%;">
+							<div class="widget__title card__header justify-content-center bg-light">
+								<h4>Shots</h4>
+							</div>
+							<div class="widget__content card__content">
+								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
+									<div class="widget__content card__content" style="border-radius: 0px;">
+										<div class="widget-player__ribbon">
+											<div class="fas fa-star"></div>
+										</div>
+										<figure class="widget-player__photo">
+											<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p102057.png" alt="">
+										</figure>
+										<header class="widget-player__header clearfix">
+											<div class="widget-player__number">18</div>
+											<h4 class="widget-player__name">
+												<span class="widget-player__first-name">Raul</span>
+												<span class="widget-player__last-name">Jimenez</span>
+											</h4>
+										</header>
+										<div class="widget-player__content">
+											<div class="widget-player__content-inner">
+								
+												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
+													<div class="widget-player__stat-number">36</div>
+													<h6 class="widget-player__stat-label">Shots</h6>
+												</div>
+												<div class="widget-player__stat widget-player__games" style="width: 50%;">
+													<div class="widget-player__stat-number">15</div>
+													<h6 class="widget-player__stat-label">Play</h6>
+												</div>
+											</div>
+								
+											<div class="widget-player__content-alt">
+												<!-- Progress: Shot Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">SHOT ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">96%</div>
+												</div>
+												<!-- Progress: Shot Accuracy / End -->
+								
+												<!-- Progress: Pass Accuracy -->
+												<div class="progress-stats">
+													<div class="progress__label">PASS ACC</div>
+													<div class="progress">
+														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress__number">74%</div>
+												</div>
+												<!-- Progress: Pass Accuracy / End -->
+											</div>
+										</div>
+								
+									</div>
+								</aside>
+								<!-- Leader: Points -->
+								<div class="table-responsive">
+									<table class="table team-leader">
+										<thead>
+											<tr>
+												<th class="team-leader__type">Player</th>
+												<th class="team-leader__goals">S</th>
+												<th class="team-leader__gp">P</th>
+												<th class="team-leader__avg">AVG</th>
+											</tr>
+										</thead>
+										<tbody>
+						
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">2.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">James Messinal</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">11</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="91">
+															<span class="circular__percents">0.91</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">3.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">David Hawkins</h5>
+															<span class="team-leader__player-position">Forward</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">10</td>
+												<td class="team-leader__gp">12</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="83">
+															<span class="circular__percents">0.83</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="team-leader__player">
+													<div class="team-leader__player-info">
+														<span class="font-weight-bold mx-1">4.</span>
+														<figure class="team-leader__player-img team-leader__player-img--sm">
+															<img src="assets/images/player-placeholder.png" alt="">
+														</figure>
+														<div class="team-leader__player-inner">
+															<h5 class="team-leader__player-name">Griffin Peterson</h5>
+															<span class="team-leader__player-position">Midfielder</span>
+														</div>
+													</div>
+												</td>
+												<td class="team-leader__goals">8</td>
+												<td class="team-leader__gp">10</td>
+												<td class="team-leader__avg">
+													<div class="circular">
+														<div class="circular__bar" data-percent="80">
+															<span class="circular__percents">0.80</span>
+														</div>
+													</div>
+												</td>
+											</tr>
+						
+										</tbody>
+									</table>
+								</div>
+								<!-- Leader: Points / End -->
+							</div>
+						</aside>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Content / End -->
+		
+
+		<!-- Footer
+		================================================== -->
+		<footer id="footer" class="footer">
+		
+			<!-- Footer Secondary -->
+			<div class="footer-secondary">
+				<div class="container">
+					<div class="footer-secondary__inner py-2">
+						<div class="row">
+							<div class="col-12">
+								<p class="text-center m-0 p-0" style="font-weight: bold;font-size: 12pt;color: #fff;font-family: Raleway, sans-serif;padding: 10px 0;">Powered By 
+                                    <a href="https://armasoftware.com/">
+                                        <img width="70" class=" ls-is-cached lazyloaded" data-src="https://armasoftware.com/arma_logo.png" src="https://armasoftware.com/arma_logo.png"> 
+                                    </a>
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Secondary / End -->
+		</footer>
+		<!-- Footer / End -->
+		
+		
+		<!-- Login/Register Tabs Modal -->
+		<div class="modal fade" id="modal-login-register-tabs" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg modal--login modal--login-only" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+		
+						<div class="modal-account-holder">
+							<div class="modal-account__item modal-account__item--logo" style="background-image: url('assets/images/login.jpg');">
+								<div class="overlay"></div>
+								<p class="modal-account__item-register-txt">Don’t have an account? <b>Register Now</b> and enjoy all our benefits!</p>
+							</div>
+							<div class="modal-account__item">
+		
+								<!-- Tab panes -->
+								<div class="tab-content">
+		
+									<!-- Tab: Login -->
+									<div role="tabpanel" class="tab-pane fade show active" id="tab-login">
+		
+										<!-- Login Form -->
+										<form action="#" class="modal-form">
+											<h5>Login to your account</h5>
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter your email address...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Enter your password...">
+											</div>
+											<div class="form-group form-group--pass-reminder">
+												<label class="checkbox checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
+													<span class="checkbox-indicator"></span>
+												</label>
+												<a href="#">Forgot your password?</a>
+											</div>
+											<div class="form-group form-group--submit">
+												<a href="#" class="btn btn-primary-inverse btn-block">Enter to your account</a>
+											</div>
+											<div class="modal-form--social">
+												<h6>or Login with your social profile:</h6>
+												<ul class="social-links social-links--btn text-center">
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fab fa-facebook"></i></a>
+													</li>
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--twitter"><i class="fab fa-twitter"></i></a>
+													</li>
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--pinterest"><i class="fab fa-pinterest"></i></a>
+													</li>
+												</ul>
+											</div>
+										</form>
+										<!-- Login Form / End -->
+		
+									</div>
+									<!-- Tab: Login / End -->
+		
+									<!-- Tab: Register -->
+									<div role="tabpanel" class="tab-pane fade" id="tab-register">
+		
+										<!-- Register Form -->
+										<form action="#" class="modal-form">
+											<h5>Register Now!</h5>
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter your email address...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Enter your password...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Repeat your password...">
+											</div>
+											<div class="form-group form-group--submit">
+												<a href="#" class="btn btn-success btn-block">Create Your Account</a>
+											</div>
+											<div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account. </div>
+										</form>
+										<!-- Register Form / End -->
+		
+									</div>
+									<!-- Tab: Register / End -->
+		
+								</div>
+		
+								<!-- Nav tabs -->
+								<div class="nav-tabs-login-wrapper">
+									<ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
+										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
+										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
+									</ul>
+								</div>
+								<!-- Nav tabs / End -->
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Login/Register Tabs Modal / End -->
+
+	</div>
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	
+	<!-- Template JS -->
+	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+</html>

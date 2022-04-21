@@ -24,6 +24,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- CSS
 	================================================== -->
@@ -33,6 +34,7 @@
 	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
 	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
 
 	<!-- Template CSS-->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -75,17 +77,10 @@
 						<nav class="main-nav clearfix">
 							<ul class="main-nav__list">
 								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-								<li class=""><a href="#"><i class="fa fa-chart-pie"></i> Stats</a>
-									<ul class="main-nav__sub">
-										<li class=""><a href="top_players.html">Top Players</a></li>
-										<li class=""><a href="#">Stats 2</a></li>
-										<li class=""><a href="#">Stats 3</a></li>
-										<li class=""><a href="#">Stats 4</a></li>
-									</ul>
-								</li>
-								<li class=""><a href="teams.html"><i class="fa fa-flag"></i> Teams</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class=""><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
 								<li class="active"><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
-								<li class=""><a href="#"><i class="fa fa-newspaper"></i> News</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
 							</ul>
 		
 							<!-- Social Links -->
@@ -125,7 +120,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<h1 class="page-heading__title"><span class="highlight">Today</span> Matches</h1>
+						<h1 class="page-heading__title"><span class="highlight"></span> Matches</h1>
 					</div>
 				</div>
 			</div>
@@ -135,146 +130,302 @@
 		
 		<!-- Content
 		================================================== -->
-		<div class="site-content">
-			<div class="container">
-		
-				<!-- All Matches -->
-				<div class="card">
-					<div class="card__content">
-						<!-- Game Result -->
-						<div class="game-result">
-							<section class="game-result__section pt-0">
-								<header class="game-result__header game-result__header--alt">
-									<span class="game-result__league">League 2021/2022</span>
-									<h3 class="game-result__title">King Fahd Stadium</h3>
-									<time class="game-result__date" datetime="2022-03-7">Saturday, March 7th, 2022</time>
-								</header>
-								<div class="game-result__content">
-									<!-- 1st Team -->
-									<div class="game-result__team game-result__team--first">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Nassr FC</h5>
-										</div>
-									</div>
-									<!-- 1st Team / End -->
-									<div class="game-result__score-wrap">
-										<div class="game-result__score game-result__score--lg">
-											<span class="game-result__score-result game-result__score-result--winner">2</span> 
-											<span class="game-result__score-dash">-</span> 
-											<span class="game-result__score-result game-result__score-result--loser">0</span>
-										</div>
-										<div class="game-result__score-label">Final Score</div>
-										<div class="game-result__score-label bg-danger text-white rounded">Finished</div>
-									</div>
-									<!-- 2nd Team -->
-									<div class="game-result__team game-result__team--second">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Fateh SC</h5>
-										</div>
-									</div>
-									<!-- 2nd Team / End -->
-								</div>
-							</section>
-						</div>
-						<!-- Game Result / End -->
-					</div>
-				</div>
+		<div class="site-content bg-light">
+			<div class="container-fluid matches">
 
-				<div class="card">
-					<div class="card__content">
-						<!-- Game Result -->
-						<div class="game-result">
-							<section class="game-result__section pt-0">
-								<header class="game-result__header game-result__header--alt">
-									<span class="game-result__league">League 2021/2022</span>
-									<h3 class="game-result__title">King Fahd Stadium</h3>
-									<time class="game-result__date" datetime="2022-03-7">Saturday, March 7th, 2022</time>
-								</header>
-								<div class="game-result__content">
-									<!-- 1st Team -->
-									<div class="game-result__team game-result__team--first">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Ittihad FC Jeddah</h5>
-										</div>
-									</div>
-									<!-- 1st Team / End -->
-									<div class="game-result__score-wrap">
-										<div class="game-result__score game-result__score--lg">
-											<span class="game-result__score-result game-result__score-result--loser">0</span> 
-											<span class="game-result__score-dash">-</span> 
-											<span class="game-result__score-result game-result__score-result--winner">1</span>
-										</div>
-										<div class="game-result__score-label bg-success text-white rounded">Live Now</div>
-									</div>
-									<!-- 2nd Team -->
-									<div class="game-result__team game-result__team--second">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Shabab FC Riyadh</h5>
-										</div>
-									</div>
-									<!-- 2nd Team / End -->
-								</div>
-							</section>
-						</div>
-						<!-- Game Result / End -->
-					</div>
-				</div>
+				<time class="date long mb-4"><strong>Saturday 23 April 2022</strong></time>
 
-				<div class="card">
-					<div class="card__content">
-						<!-- Game Result -->
-						<div class="game-result">
-							<section class="game-result__section pt-0">
-								<header class="game-result__header game-result__header--alt">
-									<span class="game-result__league">League 2021/2022</span>
-									<h3 class="game-result__title">King Fahd Stadium</h3>
-									<time class="game-result__date" datetime="2022-03-7">Saturday, March 7th, 2022</time>
-								</header>
-								<div class="game-result__content">
-									<!-- 1st Team -->
-									<div class="game-result__team game-result__team--first">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Hilal FC Riyadh</h5>
-										</div>
-									</div>
-									<!-- 1st Team / End -->
-									<div class="game-result__score-wrap">
-										<div class="game-result__score game-result__score--lg">
-											<h3>10:00 PM</h3>
-										</div>
-										<div class="game-result__score-label bg-warning text-white rounded">Start Soon</div>
-									</div>
-									<!-- 2nd Team -->
-									<div class="game-result__team game-result__team--second">
-										<figure class="game-result__team-logo">
-											<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png" alt="">
-										</figure>
-										<div class="game-result__team-info">
-											<h5 class="game-result__team-name">Al Raed Club</h5>
-										</div>
-									</div>
-									<!-- 2nd Team / End -->
-								</div>
-							</section>
-						</div>
-						<!-- Game Result / End -->
-					</div>
-				</div>
+				<ul class="matchList mb-5">
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Ittihad FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png"> 
+										</span>
+									</span>
+									<span class="score ">2<span>-</span>4</span>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL HILAL FC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Nassr FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png"> 
+										</span>
+									</span>
+									<span class="score ">3<span>-</span>1</span>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">Al Fateh SC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">AL SHABAB FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png"> 
+										</span>
+									</span>
+									<time>20:45</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL RAED CLUB</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+				</ul>
+
+				<time class="date long mb-4 mt-5"><strong>Sunday 24 April 2022</strong></time>
+
+				<ul class="matchList mb-5">
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Ittihad FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png"> 
+										</span>
+									</span>
+									<time>16:00</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL HILAL FC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Nassr FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png"> 
+										</span>
+									</span>
+									<time>18:30</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">Al Fateh SC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">AL SHABAB FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png"> 
+										</span>
+									</span>
+									<time>20:45</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL RAED CLUB</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+				</ul>
+
+				<time class="date long mb-4 mt-5"><strong>Monday 25 April 2022</strong></time>
+
+				<ul class="matchList mb-5">
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Ittihad FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png"> 
+										</span>
+									</span>
+									<time>16:00</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL HILAL FC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">Al Nassr FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png"> 
+										</span>
+									</span>
+									<time>18:30</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">Al Fateh SC</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+					<li class="matchFixtureContainer aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000"> 
+						<a href="match_details.html" class="fixture preMatch">  
+							<span class="overview">  
+								<span class="teams">
+									<span class="team">
+										<span class="teamName">
+											<span class="shortname">AL SHABAB FC</span> 
+										</span>
+										<span class="badge badge-image-container">
+											<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png"> 
+										</span>
+									</span>
+									<time>20:45</time>
+									<span class="team">
+										<span class="badge badge-image-container" data-widget="club-badge-image" data-size="25">
+										<img class="badge-image badge-image--25 js-badge-image" src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png"> 
+										</span>
+										<span class="teamName">
+											<span class="shortname">AL RAED CLUB</span> 
+										</span>
+									</span> 
+								</span> 
+								<span class="stadiumName">
+									<span class="icn stadium-b"></span> King Fahd Stadium, <strong>Jeddah</strong> 
+								</span>   
+								<span class="fixtureBroadcast broadcastDataContainer" data-id="66707"></span>   
+								<span class="icn arrow-right"></span> 
+							</span>
+						</a>   
+						<a href="match_details.html" class="btn quickView">View Details <i class="fas fa-long-arrow-alt-right mx-2"></i></a>    
+					</li>
+				</ul>
 
 				<!-- All Matches / End -->
 		
@@ -423,10 +574,14 @@
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
 	
 	<!-- Template JS -->
 	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>

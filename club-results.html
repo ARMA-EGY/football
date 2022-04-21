@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Football | Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sports Club, League and News">
+	<meta name="author" content="ARMA Software">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body >
+
+	<div class="site-wrapper clearfix">
+		<div class="site-overlay"></div>
+
+		<!-- Header
+		================================================== -->
+		
+		<!-- Header Mobile -->
+		<div class="header-mobile clearfix" id="header-mobile">
+			<div class="header-mobile__logo">
+				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+			</div>
+			<div class="header-mobile__inner">
+				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+				<span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
+			</div>
+		</div>
+		
+		<!-- Header Desktop -->
+		<header class="header header--layout-1">
+		
+			<!-- Header Primary -->
+			<div class="header__primary">
+				<div class="container">
+					<div class="header__primary-inner">
+		
+						<!-- Header Logo -->
+						<div class="header-logo">
+							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+						</div>
+						<!-- Header Logo / End -->
+		
+						<!-- Main Navigation -->
+						<nav class="main-nav clearfix">
+							<ul class="main-nav__list">
+								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class="active"><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
+								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+							</ul>
+		
+							<!-- Social Links -->
+							<ul class="social-links social-links--inline social-links--main-nav">
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+							<!-- Social Links / End -->
+		
+							<!-- Pushy Panel Toggle -->
+							<a href="#" data-toggle="modal" data-target="#modal-login-register-tabs" class="pushy-panel__toggle text-center text-white">
+								<i class="fa fa-sign-in-alt"></i> Login
+							</a>
+							<!-- Pushy Panel Toggle / Eng -->
+						</nav>
+						<!-- Main Navigation / End -->
+					</div>
+				</div>
+			</div>
+			<!-- Header Primary / End -->
+		
+		</header>
+		<!-- Header / End -->
+		
+
+		<!-- Page Heading
+		================================================== -->
+		<div class="page-heading" style="background-image: url('assets/images/page-heading.jpeg');">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<h1 class="page-heading__title"><img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt=""> Al Ittihad FC Jeddah </h1>
+						<h6 class="text-white">King Fahd Stadium</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page Heading / End -->
+		
+		
+		<!-- Team Pages Filter -->
+		<nav class="content-filter">
+			<div class="container">
+				<a href="#" class="content-filter__toggle"></a>
+				<ul class="content-filter__list">
+					<li class="content-filter__item"><a href="club.html" class="content-filter__link">Overview</a></li>
+					<li class="content-filter__item"><a href="club-squad.html" class="content-filter__link">Squad</a></li>
+					<li class="content-filter__item"><a href="club-schedule.html" class="content-filter__link">Schedule</a></li>
+					<li class="content-filter__item content-filter__item--active"><a href="club-results.html" class="content-filter__link">Latest Results</a></li>
+					<li class="content-filter__item "><a href="club-stats.html" class="content-filter__link">Stats</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Team Pages Filter / End -->
+        
+		
+		<!-- Content
+		================================================== -->
+		<div class="site-content bg-light">
+			<div class="container">
+		
+				<!-- Team Latest Results -->
+				<div class="card card--has-table">
+					<div class="card__header card__header--has-btn">
+						<h4>Latest Results</h4>
+						<!-- Result Filter -->
+						<ul class="team-result-filter">
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Saudi League 2022</option>
+									<option>Saudi League 2021</option>
+									<option>Saudi League 2020</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Game Date</option>
+									<option>December 2022</option>
+									<option>November 2022</option>
+									<option>October 2022</option>
+									<option>September 2022</option>
+									<option>August 2022</option>
+									<option>July 2022</option>
+									<option>June 2022</option>
+									<option>May 2022</option>
+									<option>April 2022</option>
+									<option>March 2022</option>
+									<option>February 2022</option>
+									<option>January 2022</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Ascending</option>
+									<option>Descending</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<button type="submit" class="btn btn-default btn-outline btn-xs card-header__button">Filter Latest Results</button>
+							</li>
+						</ul>
+						<!-- Result Filter / End -->
+					</div>
+					<div class="card__content">
+						<div class="table-responsive">
+							<table class="table table-hover team-result">
+								<thead>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<th class="team-result__date">Date</th>
+										<th class="team-result__vs">Versus</th>
+										<th class="team-result__score">Score</th>
+										<th class="team-result__status">Status</th>
+										<th class="team-result__ball-possession">Ball Possession</th>
+										<th class="team-result__shots">Shots (on goal)</th>
+										<th class="team-result__fouls">Total Fouls</th>
+										<th class="team-result__game-overview">Game Overview</th>
+									</tr>
+								</thead>
+								<tbody>
+		
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Sat, Mar 10</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Shabab FC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">W</span> 2-0</td>
+										<td class="team-result__status">Home</td>
+										<td class="team-result__ball-possession">62% - 38%</td>
+										<td class="team-result__shots">25(14) - 16(6)</td>
+										<td class="team-result__fouls">12 - 14</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Fri, Mar 16</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Nassr FC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">L</span> 4-2</td>
+										<td class="team-result__status">Away</td>
+										<td class="team-result__ball-possession">58% - 42%</td>
+										<td class="team-result__shots">28(16) - 22(11)</td>
+										<td class="team-result__fouls">15 - 16</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Sat, Mar 10</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Hilal FC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">D</span> 0-0</td>
+										<td class="team-result__status">Home</td>
+										<td class="team-result__ball-possession">46% - 54%</td>
+										<td class="team-result__shots">24(12) - 32(18)</td>
+										<td class="team-result__fouls">11 - 18</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Fri, Mar 4</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-dhamk-club_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Dhamk Club</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">W</span> 2-3</td>
+										<td class="team-result__status">Away</td>
+										<td class="team-result__ball-possession">60% - 40%</td>
+										<td class="team-result__shots">29(20) - 25(12)</td>
+										<td class="team-result__fouls">19 - 14</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Sat, Feb 29</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Fateh SC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">W</span> 2-1</td>
+										<td class="team-result__status">Home</td>
+										<td class="team-result__ball-possession">55% - 45%</td>
+										<td class="team-result__shots">25(15) - 30(17)</td>
+										<td class="team-result__fouls">14 - 16</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Fri, Feb 21</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-abha-club_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Abha Club</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">L</span> 4-2</td>
+										<td class="team-result__status">Away</td>
+										<td class="team-result__ball-possession">47% - 53%</td>
+										<td class="team-result__shots">22(11) - 25(18)</td>
+										<td class="team-result__fouls">18 - 20</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Sat, Feb 17</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Raed Club</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">D</span> 0-0</td>
+										<td class="team-result__status">Home</td>
+										<td class="team-result__ball-possession">61% - 39%</td>
+										<td class="team-result__shots">26(13) - 24(10)</td>
+										<td class="team-result__fouls">19 - 15</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Fri, Feb 9</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-faisaly-fc_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Faisaly FC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">W</span> 2-3</td>
+										<td class="team-result__status">Away</td>
+										<td class="team-result__ball-possession">52% - 48%</td>
+										<td class="team-result__shots">22(18) - 27(8)</td>
+										<td class="team-result__fouls">21 - 17</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-result__date">Sat, Feb 3</td>
+										<td class="team-result__vs">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ahli-sc-jeddah_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Ahli SC</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-result__score"><span class="team-result__game">W</span> 2-0</td>
+										<td class="team-result__status">Home</td>
+										<td class="team-result__ball-possession">62% - 38%</td>
+										<td class="team-result__shots">25(14) - 16(6)</td>
+										<td class="team-result__fouls">12 - 14</td>
+										<td class="team-result__game-overview"><a href="match_details.html" class="btn btn-xs btn-default btn-outline btn-block">See Full Overview</a></td>
+									</tr>
+		
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Team Latest Results / End -->
+		
+				<!-- Team Pagination -->
+				<nav class="team-pagination" aria-label="Team navigation">
+					<ul class="pagination pagination--condensed pagination--lg justify-content-center">
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><span class="page-link">...</span></li>
+						<li class="page-item"><a class="page-link" href="#">16</a></li>
+					</ul>
+				</nav>
+				<!-- Team Pagination / End -->
+				
+			</div>
+		</div>
+		
+		<!-- Content / End -->
+		
+
+		<!-- Footer
+		================================================== -->
+		<footer id="footer" class="footer">
+		
+			<!-- Footer Secondary -->
+			<div class="footer-secondary">
+				<div class="container">
+					<div class="footer-secondary__inner py-2">
+						<div class="row">
+							<div class="col-12">
+								<p class="text-center m-0 p-0" style="font-weight: bold;font-size: 12pt;color: #fff;font-family: Raleway, sans-serif;padding: 10px 0;">Powered By 
+                                    <a href="https://armasoftware.com/">
+                                        <img width="70" class=" ls-is-cached lazyloaded" data-src="https://armasoftware.com/arma_logo.png" src="https://armasoftware.com/arma_logo.png"> 
+                                    </a>
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Secondary / End -->
+		</footer>
+		<!-- Footer / End -->
+		
+		
+		<!-- Login/Register Tabs Modal -->
+		<div class="modal fade" id="modal-login-register-tabs" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg modal--login modal--login-only" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+		
+						<div class="modal-account-holder">
+							<div class="modal-account__item modal-account__item--logo" style="background-image: url('assets/images/login.jpg');">
+								<div class="overlay"></div>
+								<p class="modal-account__item-register-txt">Don’t have an account? <b>Register Now</b> and enjoy all our benefits!</p>
+							</div>
+							<div class="modal-account__item">
+		
+								<!-- Tab panes -->
+								<div class="tab-content">
+		
+									<!-- Tab: Login -->
+									<div role="tabpanel" class="tab-pane fade show active" id="tab-login">
+		
+										<!-- Login Form -->
+										<form action="#" class="modal-form">
+											<h5>Login to your account</h5>
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter your email address...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Enter your password...">
+											</div>
+											<div class="form-group form-group--pass-reminder">
+												<label class="checkbox checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
+													<span class="checkbox-indicator"></span>
+												</label>
+												<a href="#">Forgot your password?</a>
+											</div>
+											<div class="form-group form-group--submit">
+												<a href="#" class="btn btn-primary-inverse btn-block">Enter to your account</a>
+											</div>
+											<div class="modal-form--social">
+												<h6>or Login with your social profile:</h6>
+												<ul class="social-links social-links--btn text-center">
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fab fa-facebook"></i></a>
+													</li>
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--twitter"><i class="fab fa-twitter"></i></a>
+													</li>
+													<li class="social-links__item">
+														<a href="#" class="social-links__link social-links__link--lg social-links__link--pinterest"><i class="fab fa-pinterest"></i></a>
+													</li>
+												</ul>
+											</div>
+										</form>
+										<!-- Login Form / End -->
+		
+									</div>
+									<!-- Tab: Login / End -->
+		
+									<!-- Tab: Register -->
+									<div role="tabpanel" class="tab-pane fade" id="tab-register">
+		
+										<!-- Register Form -->
+										<form action="#" class="modal-form">
+											<h5>Register Now!</h5>
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter your email address...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Enter your password...">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Repeat your password...">
+											</div>
+											<div class="form-group form-group--submit">
+												<a href="#" class="btn btn-success btn-block">Create Your Account</a>
+											</div>
+											<div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account. </div>
+										</form>
+										<!-- Register Form / End -->
+		
+									</div>
+									<!-- Tab: Register / End -->
+		
+								</div>
+		
+								<!-- Nav tabs -->
+								<div class="nav-tabs-login-wrapper">
+									<ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
+										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
+										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
+									</ul>
+								</div>
+								<!-- Nav tabs / End -->
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Login/Register Tabs Modal / End -->
+
+	</div>
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	
+	<!-- Template JS -->
+	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+</html>

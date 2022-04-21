@@ -24,6 +24,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- CSS
 	================================================== -->
@@ -33,6 +34,7 @@
 	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
 	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
 
 	<!-- Template CSS-->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -75,17 +77,10 @@
 						<nav class="main-nav clearfix">
 							<ul class="main-nav__list">
 								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-								<li class=""><a href="#"><i class="fa fa-chart-pie"></i> Stats</a>
-									<ul class="main-nav__sub">
-										<li class=""><a href="top_players.html">Top Players</a></li>
-										<li class=""><a href="#">Stats 2</a></li>
-										<li class=""><a href="#">Stats 3</a></li>
-										<li class=""><a href="#">Stats 4</a></li>
-									</ul>
-								</li>
-								<li class="active"><a href="teams.html"><i class="fa fa-flag"></i> Teams</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class="active"><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
 								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
-								<li class=""><a href="#"><i class="fa fa-newspaper"></i> News</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
 							</ul>
 		
 							<!-- Social Links -->
@@ -120,74 +115,101 @@
 
 		<!-- Page Heading
 		================================================== -->
-		<div class="page-heading" style="background-image: url('assets/images/cover.jpg');">
+		<div class="page-heading" style="background-image: url('assets/images/page-heading.jpeg');">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<h1 class="page-heading__title">Teams Schedule <span class="highlight">2021/2022</span></h1>
+						<h1 class="page-heading__title"><img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt=""> Al Ittihad FC Jeddah </h1>
+						<h6 class="text-white">King Fahd Stadium</h6>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Page Heading / End -->
+		
+		
+		<!-- Team Pages Filter -->
+		<nav class="content-filter">
+			<div class="container">
+				<a href="#" class="content-filter__toggle"></a>
+				<ul class="content-filter__list">
+					<li class="content-filter__item"><a href="club.html" class="content-filter__link">Overview</a></li>
+					<li class="content-filter__item"><a href="club-squad.html" class="content-filter__link">Squad</a></li>
+					<li class="content-filter__item content-filter__item--active"><a href="club-schedule.html" class="content-filter__link">Schedule</a></li>
+					<li class="content-filter__item "><a href="club-results.html" class="content-filter__link">Latest Results</a></li>
+					<li class="content-filter__item "><a href="club-stats.html" class="content-filter__link">Stats</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Team Pages Filter / End -->
         
 		
 		<!-- Content
 		================================================== -->
-		<div class="site-content">
+		<div class="site-content bg-light">
 			<div class="container">
+				
 		
-				<!-- Teams Schedule -->
+				<!-- Schedule -->
 				<div class="card card--has-table">
 					<div class="card__header">
-						<h4>League Table 2021/2022</h4>
+						<h4>Games Schedule</h4>
+						<!-- Schedule Filter -->
+						<ul class="team-result-filter">
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Saudi League 2022</option>
+									<option>Saudi League 2021</option>
+									<option>Saudi League 2020</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Game Date</option>
+									<option>December 2022</option>
+									<option>November 2022</option>
+									<option>October 2022</option>
+									<option>September 2022</option>
+									<option>August 2022</option>
+									<option>July 2022</option>
+									<option>June 2022</option>
+									<option>May 2022</option>
+									<option>April 2022</option>
+									<option>March 2022</option>
+									<option>February 2022</option>
+									<option>January 2022</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<select class="form-control input-xs">
+									<option>Ascending</option>
+									<option>Descending</option>
+								</select>
+							</li>
+							<li class="team-result-filter__item">
+								<button type="submit" class="btn btn-default btn-outline btn-xs card-header__button">Filter Schedule</button>
+							</li>
+						</ul>
+						<!-- Schedule Filter / End -->
 					</div>
 					<div class="card__content">
 						<div class="table-responsive">
-							<table class="table table-hover table-standings table-standings--full table-standings--full-soccer">
+							<table class="table table-hover team-schedule team-schedule--full">
 								<thead>
-									<tr>
-										<th class="team-standings__pos">Pos</th>
-										<th class="team-standings__team">Teams</th>
-										<th class="team-standings__played">Played</th>
-										<th class="team-standings__win">Won</th>
-										<th class="team-standings__lose">Lost</th>
-										<th class="team-standings__drawn">Drawn</th>
-										<th class="team-standings__goals-for">Goals For</th>
-										<th class="team-standings__goals-against">Goals Against</th>
-										<th class="team-standings__goals-diff">Goals Diff</th>
-										<th class="team-standings__total-points">Total Points</th>
-										<th class="team-standings__points-diff">Points Diff</th>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<th class="team-schedule__date">Date</th>
+										<th class="team-schedule__versus">Versus</th>
+										<th class="team-schedule__status">Status</th>
+										<th class="team-schedule__time">Time</th>
+										<th class="team-schedule__compet">Competition</th>
+										<th class="team-schedule__venue">Venue</th>
 									</tr>
 								</thead>
 								<tbody>
-		
-									<tr>
-										<td class="team-standings__pos">01</td>
-										<td class="team-standings__team">
-											<div class="team-meta">
-												<figure class="team-meta__logo">
-													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
-												</figure>
-												<div class="team-meta__info">
-													<h6 class="team-meta__name">Al Ittihad FC Jeddah</h6>
-												</div>
-											</div>
-										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">36</td>
-										<td class="team-standings__lose">14</td>
-										<td class="team-standings__drawn">10</td>
-										<td class="team-standings__goals-for">19</td>
-										<td class="team-standings__goals-against">2</td>
-										<td class="team-standings__goals-diff">17</td>
-										<td class="team-standings__total-points">118</td>
-										<td class="team-standings__points-diff">+ 15</td>
-									</tr>
-									<tr>
-										<td class="team-standings__pos">02</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Saturday, Mar 24</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
@@ -197,19 +219,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">32</td>
-										<td class="team-standings__lose">20</td>
-										<td class="team-standings__drawn">8</td>
-										<td class="team-standings__goals-for">17</td>
-										<td class="team-standings__goals-against">8</td>
-										<td class="team-standings__goals-diff">9</td>
-										<td class="team-standings__total-points">104</td>
-										<td class="team-standings__points-diff">+ 1</td>
+										<td class="team-schedule__status">Away</td>
+										<td class="team-schedule__time">9:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">03</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Friday, May 31</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
@@ -219,19 +236,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">32</td>
-										<td class="team-standings__lose">21</td>
-										<td class="team-standings__drawn">7</td>
-										<td class="team-standings__goals-for">22</td>
-										<td class="team-standings__goals-against">5</td>
-										<td class="team-standings__goals-diff">17</td>
-										<td class="team-standings__total-points">103</td>
-										<td class="team-standings__points-diff">0</td>
+										<td class="team-schedule__status">Home</td>
+										<td class="team-schedule__time">9:30 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">04</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Saturday, May 8</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
@@ -241,19 +253,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">30</td>
-										<td class="team-standings__lose">20</td>
-										<td class="team-standings__drawn">10</td>
-										<td class="team-standings__goals-for">16</td>
-										<td class="team-standings__goals-against">6</td>
-										<td class="team-standings__goals-diff">10</td>
-										<td class="team-standings__total-points">100</td>
-										<td class="team-standings__points-diff">- 3</td>
+										<td class="team-schedule__status">Away</td>
+										<td class="team-schedule__time">10:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">05</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Friday, May 14</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-dhamk-club_thumb.png" alt="">
@@ -263,19 +270,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">28</td>
-										<td class="team-standings__lose">24</td>
-										<td class="team-standings__drawn">8</td>
-										<td class="team-standings__goals-for">18</td>
-										<td class="team-standings__goals-against">4</td>
-										<td class="team-standings__goals-diff">14</td>
-										<td class="team-standings__total-points">92</td>
-										<td class="team-standings__points-diff">- 11</td>
+										<td class="team-schedule__status">Home</td>
+										<td class="team-schedule__time">10:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">06</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Saturday, May 22</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png" alt="">
@@ -285,19 +287,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">27</td>
-										<td class="team-standings__lose">24</td>
-										<td class="team-standings__drawn">9</td>
-										<td class="team-standings__goals-for">18</td>
-										<td class="team-standings__goals-against">5</td>
-										<td class="team-standings__goals-diff">13</td>
-										<td class="team-standings__total-points">90</td>
-										<td class="team-standings__points-diff">- 13</td>
+										<td class="team-schedule__status">Away</td>
+										<td class="team-schedule__time">10:30 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">07</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Saturday, May 29</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-abha-club_thumb.png" alt="">
@@ -307,19 +304,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">25</td>
-										<td class="team-standings__lose">28</td>
-										<td class="team-standings__drawn">7</td>
-										<td class="team-standings__goals-for">17</td>
-										<td class="team-standings__goals-against">4</td>
-										<td class="team-standings__goals-diff">13</td>
-										<td class="team-standings__total-points">82</td>
-										<td class="team-standings__points-diff">- 21</td>
+										<td class="team-schedule__status">Home</td>
+										<td class="team-schedule__time">9:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">08</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Friday, Jun 5</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-raed-club_thumb.png" alt="">
@@ -329,41 +321,14 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">24</td>
-										<td class="team-standings__lose">30</td>
-										<td class="team-standings__drawn">6</td>
-										<td class="team-standings__goals-for">18</td>
-										<td class="team-standings__goals-against">8</td>
-										<td class="team-standings__goals-diff">10</td>
-										<td class="team-standings__total-points">78</td>
-										<td class="team-standings__points-diff">- 25</td>
+										<td class="team-schedule__status">Away</td>
+										<td class="team-schedule__time">9:30 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
-									<tr>
-										<td class="team-standings__pos">09</td>
-										<td class="team-standings__team">
-											<div class="team-meta">
-												<figure class="team-meta__logo">
-													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ahli-sc-jeddah_thumb.png" alt="">
-												</figure>
-												<div class="team-meta__info">
-													<h6 class="team-meta__name">Al Ahli SC Jeddah</h6>
-												</div>
-											</div>
-										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">22</td>
-										<td class="team-standings__lose">32</td>
-										<td class="team-standings__drawn">6</td>
-										<td class="team-standings__goals-for">16</td>
-										<td class="team-standings__goals-against">12</td>
-										<td class="team-standings__goals-diff">4</td>
-										<td class="team-standings__total-points">72</td>
-										<td class="team-standings__points-diff">- 31</td>
-									</tr>
-									<tr>
-										<td class="team-standings__pos">10</td>
-										<td class="team-standings__team">
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Saturday, Jun 13</td>
+										<td class="team-schedule__versus">
 											<div class="team-meta">
 												<figure class="team-meta__logo">
 													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-faisaly-fc_thumb.png" alt="">
@@ -373,15 +338,27 @@
 												</div>
 											</div>
 										</td>
-										<td class="team-standings__played">50</td>
-										<td class="team-standings__win">21</td>
-										<td class="team-standings__lose">31</td>
-										<td class="team-standings__drawn">6</td>
-										<td class="team-standings__goals-for">19</td>
-										<td class="team-standings__goals-against">14</td>
-										<td class="team-standings__goals-diff">5</td>
-										<td class="team-standings__total-points">69</td>
-										<td class="team-standings__points-diff">- 34</td>
+										<td class="team-schedule__status">Home</td>
+										<td class="team-schedule__time">10:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
+									</tr>
+									<tr class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+										<td class="team-schedule__date">Thursday, Jun 8</td>
+										<td class="team-schedule__versus">
+											<div class="team-meta">
+												<figure class="team-meta__logo">
+													<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ahli-sc-jeddah_thumb.png" alt="">
+												</figure>
+												<div class="team-meta__info">
+													<h6 class="team-meta__name">Al Ahli SC Jeddah</h6>
+												</div>
+											</div>
+										</td>
+										<td class="team-schedule__status">Away</td>
+										<td class="team-schedule__time">10:00 PM</td>
+										<td class="team-schedule__compet">Saudi League 2021/2022</td>
+										<td class="team-schedule__venue">King Fahd Stadium</td>
 									</tr>
 		
 								</tbody>
@@ -389,8 +366,20 @@
 						</div>
 					</div>
 				</div>
-				<!-- Teams Schedule / End -->
+				<!-- Schedule / End -->
 		
+				<!-- Team Pagination -->
+				<nav class="team-pagination" aria-label="Team navigation">
+					<ul class="pagination pagination--condensed pagination--lg justify-content-center">
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><span class="page-link">...</span></li>
+						<li class="page-item"><a class="page-link" href="#">16</a></li>
+					</ul>
+				</nav>
+				<!-- Team Pagination / End -->
+
 			</div>
 		</div>
 		
@@ -536,10 +525,14 @@
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
 	
 	<!-- Template JS -->
 	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>

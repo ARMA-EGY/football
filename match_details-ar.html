@@ -38,6 +38,8 @@
 
 	<!-- Template CSS-->
 	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- RTL CSS-->
+	<link href="assets/css/style-rtl.css" rel="stylesheet">
 
 </head>
 <body >
@@ -51,7 +53,7 @@
 		<!-- Header Mobile -->
 		<div class="header-mobile clearfix" id="header-mobile">
 			<div class="header-mobile__logo">
-				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+				<a href="index-ar.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
 			</div>
 			<div class="header-mobile__inner">
 				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
@@ -69,28 +71,28 @@
 		
 						<!-- Header Logo -->
 						<div class="header-logo">
-							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+							<a href="index-ar.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
 						</div>
 						<!-- Header Logo / End -->
 		
 						<!-- Main Navigation -->
 						<nav class="main-nav clearfix">
 							<ul class="main-nav__list">
-								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
-								<li class=""><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
-								<li class="active"><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
-								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+								<li class=""><a href="index-ar.html"><i class="fa fa-home"></i> الرئيسية</a></li>
+								<li class=""><a href="stats-ar.html"><i class="fa fa-chart-pie"></i> الاحصائيات</a></li>
+								<li class=""><a href="clubs-ar.html"><i class="fa fa-flag"></i> الأندية</a></li>
+								<li class="active"><a href="matches-ar.html"><i class="fa fa-futbol"></i> المباريات</a></li>
+								<li class=""><a href="compare-ar.html"><i class="fas fa-exchange-alt"></i> المقارنات</a></li>
 							</ul>
 
 							<!-- Languages -->
 							<ul class="nav-account">
 								<li class="nav-account__item has-children">
 									<span class="main-nav__toggle"></span>
-									<a href="#">Language: <span class="highlight">EN</span></a>
+									<a href="#">اللغة: <span class="highlight"> العربية</span></a>
 									<ul class="main-nav__sub">
-										<li><a href="index.html">English</a></li>
-										<li><a href="index-ar.html">Arabic</a></li>
+										<li><a href="index.html">الانجليزية</a></li>
+										<li><a href="#">العربية</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -112,7 +114,7 @@
 		
 							<!-- Pushy Panel Toggle -->
 							<a href="#" data-toggle="modal" data-target="#modal-login-register-tabs" class="pushy-panel__toggle text-center text-white">
-								<i class="fa fa-sign-in-alt"></i> Login
+								<i class="fa fa-sign-in-alt"></i> تسجيل الدخول
 							</a>
 							<!-- Pushy Panel Toggle / Eng -->
 						</nav>
@@ -131,8 +133,8 @@
 		<div class="alc-event-header alc-event-header--layout-2">
 			<div class="alc-event-header__top">
 				<div class="container">
-					<h6 class="title">Saudi League 2022</h6>
-					<span class="subtitle">Saturday, March 24</span>
+					<h6 class="title"> الدوري السعودي  2022 </h6>
+					<span class="subtitle"> السبت 24 مارس </span>
 				</div>
 			</div>
 			<div class="alc-event-header__content">
@@ -218,7 +220,7 @@
 				<!-- Timeline -->
 				<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 					<div class="card__header">
-						<h4>Game Timeline</h4>
+						<h4>الجدول الزمني للمباراة</h4>
 					</div>
 					<div class="card__content card__content--pattern-dotted">
 		
@@ -322,7 +324,7 @@
 								<!-- Widget: Doughnut Chart -->
 								<div class="widget card widget--sidebar aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 									<div class="widget__title card__header">
-										<h4>AL HILAL FC Shots</h4>
+										<h4>تسديدات نادي الهلال</h4>
 									</div>
 									<div class="widget__content card__content">
 										<canvas id="chart-doughnut-soccer-1" height="208"></canvas>
@@ -335,7 +337,7 @@
 								<!-- Widget: Doughnut Chart -->
 								<div class="widget card card--alt-color widget--sidebar aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 									<div class="widget__title card__header">
-										<h4>AL FATEH SC Shots</h4>
+										<h4>تسديدات نادي الفتح</h4>
 									</div>
 									<div class="widget__content card__content">
 										<canvas id="chart-doughnut-soccer-2" height="208"></canvas>
@@ -349,7 +351,7 @@
 						<!-- Game Scoreboard -->
 						<div class="card aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 							<header class="card__header alc-teams-legend">
-								<h4 class="alc-teams-legend__title">Match Statistics</h4>
+								<h4 class="alc-teams-legend__title">احصائيات المباراة</h4>
 								<div class="alc-teams-legend__info">
 									<!-- Teams -->
 									<div class="alc-teams-legend__teams">
@@ -385,33 +387,33 @@
 															<table class="table table-wrap-bordered table-thead-color">
 																<thead>
 																	<tr>
-																		<th colspan="3">Main Statistics</th>
+																		<th colspan="3">الاحصائيات الرئيسية</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	<tr>
 																		<td>25(14)</td>
-																		<td>Shots (on goal)</td>
+																		<td>تسديد (على المرمى)</td>
 																		<td>16(6)</td>
 																	</tr>
 																	<tr>
 																		<td>9</td>
-																		<td>Corner Kicks</td>
+																		<td>الركنيات</td>
 																		<td>11</td>
 																	</tr>
 																	<tr>
 																		<td>8</td>
-																		<td>Saves</td>
+																		<td>الانقاذ</td>
 																		<td>5</td>
 																	</tr>
 																	<tr>
 																		<td>0</td>
-																		<td>Yellow Cards</td>
+																		<td>الكروت الصفراء</td>
 																		<td>2</td>
 																	</tr>
 																	<tr>
 																		<td>1</td>
-																		<td>Red Cards</td>
+																		<td>الكروت الحمراء</td>
 																		<td>0</td>
 																	</tr>
 																</tbody>
@@ -423,18 +425,18 @@
 														<div class="row">
 															<div class="col-6">
 																<div class="circular circular--size-70">
-																	<div class="circular__bar" data-percent="84.5" data-bar-color="38a9ff">
+																	<div class="circular__bar" data-percent="84.5">
 																		<span class="circular__percents">84.5<small>%</small></span>
 																	</div>
-																	<span class="circular__label">Shot Accuracy</span>
+																	<span class="circular__label">دقة التصويب</span>
 																</div>
 															</div>
 															<div class="col-6">
 																<div class="circular circular--size-70">
-																	<div class="circular__bar" data-percent="62.3" data-bar-color="38a9ff">
+																	<div class="circular__bar" data-percent="62.3">
 																		<span class="circular__percents">62.3<small>%</small></span>
 																	</div>
-																	<span class="circular__label">Pass Accuracy</span>
+																	<span class="circular__label">دقة التمريرات</span>
 																</div>
 															</div>
 														</div>
@@ -478,7 +480,7 @@
 																	<div class="circular__bar" data-percent="84.5" data-bar-color="#9fe900">
 																		<span class="circular__percents">84.5<small>%</small></span>
 																	</div>
-																	<span class="circular__label">Shot Accuracy</span>
+																	<span class="circular__label">دقة التصويب</span>
 																</div>
 															</div>
 															<div class="col-6">
@@ -486,7 +488,7 @@
 																	<div class="circular__bar" data-percent="62.3" data-bar-color="#9fe900">
 																		<span class="circular__percents">62.3<small>%</small></span>
 																	</div>
-																	<span class="circular__label">Pass Accuracy</span>
+																	<span class="circular__label">دقة التمريرات</span>
 																</div>
 															</div>
 														</div>
@@ -530,7 +532,7 @@
 									<!-- Ball Possession -->
 									<section class="game-result__section">
 										<header class="game-result__subheader card__subheader">
-											<h5 class="game-result__subtitle">Ball Possession</h5>
+											<h5 class="game-result__subtitle">استحواذ الكرة</h5>
 										</header>
 										<div class="game-result__content">
 						
@@ -560,7 +562,7 @@
 									<!-- Additional Statistics -->
 									<section class="game-result__section">
 										<header class="game-result__subheader card__subheader">
-											<h5 class="game-result__subtitle">Additional Statistics</h5>
+											<h5 class="game-result__subtitle">إحصائيات إضافية</h5>
 										</header>
 										<div class="game-result__content">
 						
@@ -569,7 +571,7 @@
 											<div class="progress-double-container">
 												<!-- Stat: Fouls Commited -->
 												<div class="progress-double-wrapper">
-													<h6 class="progress-title progress-title--lg">Fouls Commited</h6>
+													<h6 class="progress-title progress-title--lg">الأخطاء المرتكبة</h6>
 													<div class="progress-inner-holder">
 														<div class="progress__digit progress__digit--left progress__digit--highlight">12</div>
 														<div class="progress__double">
@@ -586,7 +588,7 @@
 												<!-- Stat: Fouls Commited / End -->
 												<!-- Stat: Fouls Suffered -->
 												<div class="progress-double-wrapper">
-													<h6 class="progress-title progress-title--lg">Fouls Suffered</h6>
+													<h6 class="progress-title progress-title--lg">اخطاء خطيرة</h6>
 													<div class="progress-inner-holder">
 														<div class="progress__digit progress__digit--left progress__digit--highlight">14</div>
 														<div class="progress__double">
@@ -603,7 +605,7 @@
 												<!-- Stat: Fouls Suffered / End -->
 												<!-- Stat: Distance Covered (KM) -->
 												<div class="progress-double-wrapper">
-													<h6 class="progress-title progress-title--lg">Distance Covered (KM)</h6>
+													<h6 class="progress-title progress-title--lg">المسافة المقطوعة (كم)</h6>
 													<div class="progress-inner-holder">
 														<div class="progress__digit progress__digit--left progress__digit--highlight">11.7</div>
 														<div class="progress__double">
@@ -620,7 +622,7 @@
 												<!-- Stat: Distance Covered (KM) / End -->
 												<!-- Stat: Injured Players -->
 												<div class="progress-double-wrapper">
-													<h6 class="progress-title progress-title--lg">Injured Players</h6>
+													<h6 class="progress-title progress-title--lg">اللاعبون المصابون</h6>
 													<div class="progress-inner-holder">
 														<div class="progress__digit progress__digit--left progress__digit--highlight">0</div>
 														<div class="progress__double">
@@ -637,7 +639,7 @@
 												<!-- Stat: Injured Players / End -->
 												<!-- Stat: Total Saves -->
 												<div class="progress-double-wrapper">
-													<h6 class="progress-title progress-title--lg">Total Saves</h6>
+													<h6 class="progress-title progress-title--lg">الانقاذات</h6>
 													<div class="progress-inner-holder">
 														<div class="progress__digit progress__digit--left progress__digit--highlight">6</div>
 														<div class="progress__double">
@@ -674,7 +676,7 @@
 						<!-- Widget: Team Info -->
 						<div class="widget widget--sidebar card card--no-paddings widget-event-info aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
 							<div class="widget__title card__header">
-								<h4>Game Information</h4>
+								<h4>معلومات عن المباراة</h4>
 							</div>
 							<div class="widget__content card__content">
 						
@@ -684,19 +686,19 @@
 										<span class="alc-event-info__icon">
 											<i class="icon-svg icon-map-pin"></i>
 										</span>
-										<span class="alc-event-info__value">King Fahd Stadium (Jeddah, KSA)</span>
+										<span class="alc-event-info__value">استاد الملك فهد (جدة ، المملكة العربية السعودية)</span>
 									</li>
 									<li class="alc-event-info__item">
 										<span class="alc-event-info__icon">
 											<i class="icon-svg icon-trophy-new"></i>
 										</span>
-										<span class="alc-event-info__value">Saudi League 2022 - Week 9</span>
+										<span class="alc-event-info__value">الدوري السعودي 2022 - الأسبوع التاسع</span>
 									</li>
 									<li class="alc-event-info__item">
 										<span class="alc-event-info__icon">
 											<i class="icon-svg icon-calendar"></i>
 										</span>
-										<span class="alc-event-info__value">Saturday, March 24th, 2022 - 4:00 PM</span>
+										<span class="alc-event-info__value">السبت 24 مارس 2022 - 4:00 مساءً</span>
 									</li>
 									<li class="alc-event-info__item">
 										<span class="alc-event-info__icon">
@@ -708,7 +710,7 @@
 										<span class="alc-event-info__icon">
 											<i class="icon-svg icon-person"></i>
 										</span>
-										<span class="alc-event-info__value">12.700 Attendance (18.000 Capacity)</span>
+										<span class="alc-event-info__value">12.700 الحضور (18.000 السعة)</span>
 									</li>
 						
 								</ul>
@@ -720,7 +722,7 @@
 						<!-- Widget: Lineup -->
 						<div class="widget card widget--sidebar widget-lineup aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
 							<div class="widget__title card__header">
-								<h4>AL HILAL FC Tactic</h4>
+								<h4>تشكيل نادي الهلال</h4>
 							</div>
 							<div class="widget__content card__content">
 		
@@ -802,7 +804,7 @@
 						<!-- Widget: Lineup -->
 						<div class="widget card widget--sidebar widget-lineup aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
 							<div class="widget__title card__header">
-								<h4>AL FATEH SC Tactic</h4>
+								<h4>تشكيل نادي الفتح</h4>
 							</div>
 							<div class="widget__content card__content">
 		
@@ -1258,7 +1260,7 @@
 						<div class="modal-account-holder">
 							<div class="modal-account__item modal-account__item--logo" style="background-image: url('assets/images/login.jpg');">
 								<div class="overlay"></div>
-								<p class="modal-account__item-register-txt">Don’t have an account? <b>Register Now</b> and enjoy all our benefits!</p>
+								<p class="modal-account__item-register-txt">ليس لديك حساب؟ سجل الآن واستمتع بجميع المزايا</p>
 							</div>
 							<div class="modal-account__item">
 		
@@ -1270,25 +1272,25 @@
 		
 										<!-- Login Form -->
 										<form action="#" class="modal-form">
-											<h5>Login to your account</h5>
+											<h5>تسجيل الدخول إلى حسابك</h5>
 											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
+												<input type="email" class="form-control" placeholder="أدخل بريدك الالكتروني">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
+												<input type="password" class="form-control" placeholder="أدخل كلمة المرور">
 											</div>
 											<div class="form-group form-group--pass-reminder">
 												<label class="checkbox checkbox-inline">
-													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
+													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> تذكرنى
 													<span class="checkbox-indicator"></span>
 												</label>
-												<a href="#">Forgot your password?</a>
+												<a href="#">هل نسيت كلمة المرور ؟</a>
 											</div>
 											<div class="form-group form-group--submit">
-												<a href="#" class="btn btn-primary-inverse btn-block">Enter to your account</a>
+												<a href="#" class="btn btn-primary-inverse btn-block">أدخل إلى حسابك</a>
 											</div>
 											<div class="modal-form--social">
-												<h6>or Login with your social profile:</h6>
+												<h6>أو قم بتسجيل الدخول باستخدام وسائل التواصل الاجتماعية الخاصة بك</h6>
 												<ul class="social-links social-links--btn text-center">
 													<li class="social-links__item">
 														<a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fab fa-facebook"></i></a>
@@ -1312,20 +1314,20 @@
 		
 										<!-- Register Form -->
 										<form action="#" class="modal-form">
-											<h5>Register Now!</h5>
+											<h5>سجل الان</h5>
 											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
+												<input type="email" class="form-control" placeholder="أدخل بريدك الالكتروني">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
+												<input type="password" class="form-control" placeholder="أدخل كلمة المرور">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Repeat your password...">
+												<input type="password" class="form-control" placeholder="أعد كلمة المرور الخاصة بك">
 											</div>
 											<div class="form-group form-group--submit">
-												<a href="#" class="btn btn-success btn-block">Create Your Account</a>
+												<a href="#" class="btn btn-success btn-block">أنشئ حسابك</a>
 											</div>
-											<div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account. </div>
+											<div class="modal-form--note">ستتلقى رسالة تأكيد بالبريد الإلكتروني في بريدك الوارد تحتوي على رابط لتنشيط حسابك. </div>
 										</form>
 										<!-- Register Form / End -->
 		
@@ -1337,8 +1339,8 @@
 								<!-- Nav tabs -->
 								<div class="nav-tabs-login-wrapper">
 									<ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
-										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
-										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
+										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">تسجيل الدخول</a></li>
+										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">أنشئ حسابك</a></li>
 									</ul>
 								</div>
 								<!-- Nav tabs / End -->

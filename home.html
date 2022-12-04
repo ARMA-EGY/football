@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Football | Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sports Club, League and News">
+	<meta name="author" content="ARMA Software">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body >
+
+	<div class="site-wrapper clearfix">
+		<div class="site-overlay"></div>
+
+		<!-- Header
+		================================================== -->
+		
+		<!-- Header Mobile -->
+		<div class="header-mobile clearfix" id="header-mobile">
+			<div class="header-mobile__logo">
+				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+			</div>
+			<div class="header-mobile__inner">
+				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+				<span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
+			</div>
+		</div>
+		
+		<!-- Header Desktop -->
+		<header class="header header--layout-1">
+		
+			<!-- Header Primary -->
+			<div class="header__primary">
+				<div class="container">
+					<div class="header__primary-inner">
+		
+						<!-- Header Logo -->
+						<div class="header-logo">
+							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+						</div>
+						<!-- Header Logo / End -->
+		
+						<!-- Main Navigation -->
+						<nav class="main-nav clearfix">
+							<ul class="main-nav__list">
+								<li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class=""><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
+								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+							</ul>
+
+							<!-- Languages -->
+							<ul class="nav-account">
+								<li class="nav-account__item has-children">
+									<span class="main-nav__toggle"></span>
+									<a href="#">Language: <span class="highlight">EN</span></a>
+									<ul class="main-nav__sub">
+										<li><a href="index.html">English</a></li>
+										<li><a href="index-ar.html">Arabic</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- Languages / End -->
+		
+							<!-- Social Links -->
+							<!-- <ul class="social-links social-links--inline social-links--main-nav">
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul> -->
+							<!-- Social Links / End -->
+		
+							<!-- Pushy Panel Toggle -->
+							<ul class="main-nav__list mx-3">
+								<li class="has-children"><span class="main-nav__toggle"></span><a href="#">
+									<i class="fa fa-user-circle"></i>
+									Me</a>
+									<ul class="main-nav__sub" style="right: 0;">
+										<li class=""><a href="#"><i class="fa fa-user-circle"></i> View Profile</a></li>
+										<li class=""><a href="#"><i class="fa fa-sign-out-alt"></i> Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- Pushy Panel Toggle / Eng -->
+						</nav>
+						<!-- Main Navigation / End -->
+					</div>
+				</div>
+			</div>
+			<!-- Header Primary / End -->
+		
+		</header>
+		<!-- Header / End -->
+
+		
+		<!-- Content
+		================================================== -->
+		<div class="site-content pt-4" style="background-color: #f1f1f1;">
+
+			<section>
+				<div class="container">
+					<div class="row">
+						
+						<!-- Left Cards - Start -->
+						<div class="col-md-3">
+							
+							<!-- Widget: Standings -->
+							<aside class="widget card widget--sidebar widget-standings aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+								<div class="widget__title card__header card__header--has-btn">
+									<h4>Top 5 Table</h4>
+								</div>
+								<div class="widget__content card__content">
+									<div class="table-responsive">
+										<table class="table table-hover table-standings">
+											<thead>
+												<tr>
+													<th>Team Positions</th>
+													<th>W</th>
+													<th>L</th>
+													<th>D</th>
+													<th>PTS</th>
+												</tr>
+											</thead>
+											<tbody>
+							
+												<tr class="aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+													<td>
+														<div class="team-meta">
+															<figure class="team-meta__logo">
+																<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+															</figure>
+															<div class="team-meta__info">
+																<h6 class="team-meta__name">Al Ittihad FC Jeddah</h6>
+															</div>
+														</div>
+													</td>
+													<td>36</td>
+													<td>14</td>
+													<td>10</td>
+													<td>118</td>
+												</tr>
+												<tr class="aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+													<td>
+														<div class="team-meta">
+															<figure class="team-meta__logo">
+																<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
+															</figure>
+															<div class="team-meta__info">
+																<h6 class="team-meta__name">Al Shabab FC Riyadh</h6>
+															</div>
+														</div>
+													</td>
+													<td>32</td>
+													<td>20</td>
+													<td>8</td>
+													<td>104</td>
+												</tr>
+												<tr class="aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+													<td>
+														<div class="team-meta">
+															<figure class="team-meta__logo">
+																<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
+															</figure>
+															<div class="team-meta__info">
+																<h6 class="team-meta__name">Al Nassr FC</h6>
+															</div>
+														</div>
+													</td>
+													<td>32</td>
+													<td>21</td>
+													<td>7</td>
+													<td>103</td>
+												</tr>
+												<tr class="aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+													<td>
+														<div class="team-meta">
+															<figure class="team-meta__logo">
+																<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
+															</figure>
+															<div class="team-meta__info">
+																<h6 class="team-meta__name">Al Hilal FC Riyadh</h6>
+															</div>
+														</div>
+													</td>
+													<td>30</td>
+													<td>20</td>
+													<td>10</td>
+													<td>100</td>
+												</tr>
+												<tr class="aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
+													<td>
+														<div class="team-meta">
+															<figure class="team-meta__logo">
+																<img src="https://cdn.footystats.org/img/teams/saudi-arabia-dhamk-club_thumb.png" alt="">
+															</figure>
+															<div class="team-meta__info">
+																<h6 class="team-meta__name">Dhamk Club</h6>
+															</div>
+														</div>
+													</td>
+													<td>28</td>
+													<td>24</td>
+													<td>8</td>
+													<td>92</td>
+												</tr>
+							
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</aside>
+							<!-- Widget: Standings / End -->
+
+							<!-- Widget: Team Leaders -->
+							<aside class="widget widget--sidebar card card--has-table widget-leaders aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+								<div class="widget__title card__header">
+									<h4>Team Goalscorers</h4>
+								</div>
+								<div class="widget__content card__content">
+							
+									<!-- Leader: Points -->
+									<div class="table-responsive">
+										<table class="table team-leader">
+											<thead>
+												<tr>
+													<th class="team-leader__type">Saudi League</th>
+													<th class="team-leader__goals">G</th>
+													<th class="team-leader__gp">P</th>
+													<th class="team-leader__avg">AVG</th>
+												</tr>
+											</thead>
+											<tbody>
+							
+												<tr>
+													<td class="team-leader__player">
+														<div class="team-leader__player-info">
+															<figure class="team-leader__player-img team-leader__player-img--sm">
+																<img src="assets/images/player-placeholder.png" alt="">
+															</figure>
+															<div class="team-leader__player-inner">
+																<h5 class="team-leader__player-name">James Messinal</h5>
+																<span class="team-leader__player-position">Forward</span>
+															</div>
+														</div>
+													</td>
+													<td class="team-leader__goals">11</td>
+													<td class="team-leader__gp">12</td>
+													<td class="team-leader__avg">
+														<div class="circular">
+															<div class="circular__bar" data-percent="91">
+																<span class="circular__percents">0.91</span>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="team-leader__player">
+														<div class="team-leader__player-info">
+															<figure class="team-leader__player-img team-leader__player-img--sm">
+																<img src="assets/images/player-placeholder.png" alt="">
+															</figure>
+															<div class="team-leader__player-inner">
+																<h5 class="team-leader__player-name">David Hawkins</h5>
+																<span class="team-leader__player-position">Forward</span>
+															</div>
+														</div>
+													</td>
+													<td class="team-leader__goals">10</td>
+													<td class="team-leader__gp">12</td>
+													<td class="team-leader__avg">
+														<div class="circular">
+															<div class="circular__bar" data-percent="83">
+																<span class="circular__percents">0.83</span>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="team-leader__player">
+														<div class="team-leader__player-info">
+															<figure class="team-leader__player-img team-leader__player-img--sm">
+																<img src="assets/images/player-placeholder.png" alt="">
+															</figure>
+															<div class="team-leader__player-inner">
+																<h5 class="team-leader__player-name">Griffin Peterson</h5>
+																<span class="team-leader__player-position">Midfielder</span>
+															</div>
+														</div>
+													</td>
+													<td class="team-leader__goals">8</td>
+													<td class="team-leader__gp">10</td>
+													<td class="team-leader__avg">
+														<div class="circular">
+															<div class="circular__bar" data-percent="80">
+																<span class="circular__percents">0.80</span>
+															</div>
+														</div>
+													</td>
+												</tr>
+							
+											</tbody>
+										</table>
+									</div>
+									<!-- Leader: Points / End -->
+							
+								</div>
+							</aside>
+							<!-- Widget: Team Leaders / End -->
+		
+							<!-- Widget: Manager -->
+							<div class="aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
+								<div class="card text-center player_card playerOverviewCard hvr-float-shadow" style="width: 100%;">
+									<a href="coach.html">
+										<header class="squadPlayerHeader">
+											<img class="img statCardImg" src="https://resources.premierleague.com/premierleague/photos/players/110x140/man37974.png" alt="">
+											<span class="playerCardInfo">
+											<h4 class="name my-0">Josep Guardiola</h4>
+												<span class="position">Manchester City</span>
+											</span>
+										</header>
+										<div class="card-body p-0">
+											<ul class="squadPlayerStats">
+												<li>
+													<dl>
+													<dt class="label">Matches</dt>
+														<dd class="info">30</dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt class="label">Wins</dt>
+														<dd class="info">19</dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt class="label">Draws</dt>
+														<dd class="info">6</dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt class="label">Losses</dt>
+														<dd class="info">5</dd>
+													</dl>
+												</li>
+											</ul>
+											<a href="coach.html" class="btn rounded player_btn">Manager Profile <i class="fas fa-long-arrow-alt-right mx-2"></i></a>
+										</div>
+									</a>
+								</div>
+							</div>
+							<!-- Widget: Manager / End -->
+
+						</div>
+						<!-- Left Cards - End -->
+
+						<!-- Articles - Start -->
+						<div class="col-md-6 posts">
+							<div class="card box-border">
+								<div class="card-body p-0">
+									<div class="d-flex align-items-center my-3 mx-4">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png" >
+											</div>
+										</a>
+										<button class="btn btn-block btn-border mx-2 text-dark" data-toggle="modal" data-target="#postModal">
+											<span class="artdeco-button__text">
+												Start a post
+											</span>
+										</button>
+									</div>
+
+									<div class="share-box my-3">
+										<span class="pointer text-secondary" data-toggle="modal" data-target="#postModal">  
+											<li-icon aria-hidden="true" type="image-icon" class="">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" style="color: #38c;">
+													<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+												</svg>
+											</li-icon>
+											<span class="">
+												Photo
+											</span>
+										</span>
+
+										<span class="pointer text-secondary" data-toggle="modal" data-target="#postModal">  
+											<li-icon aria-hidden="true" type="video-icon" class="">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="" width="24" height="24" focusable="false" style="color: #f00;">
+													<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+												</svg>
+											</li-icon>
+
+											<span class="">
+												Video
+											</span>
+										</span>
+
+										<a href="write-article.html" class="pointer text-secondary">  
+											<li-icon aria-hidden="true" type="content-align-left" class="artdeco-button__icon">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="color: #555;">
+													<path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+												</svg>
+											</li-icon>
+
+											<span class="">
+												Write article
+											</span>
+										</a>
+									</div>
+
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- Article -->
+							<div class="card box-border">
+								<div class="card-body p-0 my-2 mx-4">
+									<div class="d-flex align-items-center mb-2">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png" >
+											</div>
+										</a>
+										<div class="my-auto mx-2">
+											<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">Adham Sayed</a>
+											<small style="line-height: 0;">31/6/2022</small>
+										</div>
+									</div>
+
+									<p class="text-dark">Hey guys, did anyone notice this amazing dribble in last match !!</p>
+
+									<a data-fslightbox="gallery" href="https://media.giphy.com/media/ZDoJ0Rj05zqBG/giphy.gif">
+										<img width="600" src="https://media.giphy.com/media/ZDoJ0Rj05zqBG/giphy.gif" height="600" alt="" class=" ">
+									</a>
+
+									<ul class="post-stat">
+										<li>
+											<a href="#">
+												<img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+												<span>324</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span aria-hidden="true">
+												120 comments
+												</span>
+											</a>
+										</li>
+									</ul>
+
+									<div class="action-box">
+
+        								<span class="like pointer active">
+											<a href="#" >
+												<span class="">
+													<div class="flex-wrap justify-center align-items-center">
+														<li-icon aria-hidden="true" type="thumbs-up-outline" >
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+																<path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+															</svg>
+														</li-icon>
+
+														<span>
+														Like
+														</span>
+													</div>
+												</span>
+											</a>
+										</span>
+
+										<span class="comment pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="speech-bubble-icon" class="">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+														<path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Comment
+												</span>
+											</a>
+										</span>
+			  
+										<span class="share pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="share-linkedin-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+														<path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Share
+												</span>
+											</a>
+										</span>
+										
+									</div>
+
+									<div class="comment-box d-flex justify-content-center align-items-center">
+    									<div class="">
+											<img class="profile-post" src="assets/images/avatar.png">
+										</div>
+             							<input class="form-control form-control-md box-border mx-3 my-2" placeholder="Add a comment...">
+									</div>
+								</div>
+							</div>
+
+							<!-- Article -->
+							<div class="card box-border">
+								<div class="card-body p-0 my-2 mx-4">
+									<div class="d-flex align-items-center mb-2">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png" >
+											</div>
+										</a>
+										<div class="my-auto mx-2">
+											<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">Ramez Jammal</a>
+											<small style="line-height: 0;">30/6/2022 </small>
+										</div>
+									</div>
+
+									<p class="text-dark">Final statistics at the end of match between the two teams</p>
+
+									<a data-fslightbox="gallery2" href="assets/images/post-2.jpg">
+										<img width="600" src="assets/images/post-2.jpg" height="600" alt="" class=" ">
+									</a>
+
+									<ul class="post-stat">
+										<li>
+											<a href="#">
+												<img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+												<span>47</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span aria-hidden="true">
+												59 comments
+												</span>
+											</a>
+										</li>
+									</ul>
+
+									<div class="action-box">
+        								<span class="like pointer">
+											<a href="#" >
+												<span class="">
+													<div class="flex-wrap justify-center align-items-center">
+														<li-icon aria-hidden="true" type="thumbs-up-outline" >
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+																<path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+															</svg>
+														</li-icon>
+
+														<span>
+														Like
+														</span>
+													</div>
+												</span>
+											</a>
+										</span>
+
+										<span class="comment pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="speech-bubble-icon" class="">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+														<path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Comment
+												</span>
+											</a>
+										</span>
+			  
+										<span class="share pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="share-linkedin-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+														<path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Share
+												</span>
+											</a>
+										</span>
+										
+									</div>
+
+									<div class="comment-box d-flex justify-content-center align-items-center">
+    									<div class="">
+											<img class="profile-post" src="assets/images/avatar.png">
+										</div>
+             							<input class="form-control form-control-md box-border mx-3 my-2" placeholder="Add a comment...">
+									</div>
+								</div>
+							</div>
+
+							<!-- Article -->
+							<div class="card box-border">
+								<div class="card-body p-0 my-2 mx-4">
+									<div class="d-flex align-items-center mb-2">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png" >
+											</div>
+										</a>
+										<div class="my-auto mx-2">
+											<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">Mohamed Khaled</a>
+											<small style="line-height: 0;">30/6/2022</small>
+										</div>
+									</div>
+
+									<p class="text-dark">I’m happy to share that I’m starting a new position as Writer Specialist at World Soccer Magazine</p>
+
+									<a data-fslightbox="gallery3" href="https://media.licdn.com/media/AAYQAQQSAAgAAQAAAAAAABwEEXEeLoHISM2cU9LdzliLaQ.gif">
+										<img width="600" src="https://media.licdn.com/media/AAYQAQQSAAgAAQAAAAAAABwEEXEeLoHISM2cU9LdzliLaQ.gif" height="600" alt="" class=" ">
+									</a>
+									
+									<ul class="post-stat">
+										<li>
+											<a href="#">
+												<img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+												<span>34</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span aria-hidden="true">
+												80 comments
+												</span>
+											</a>
+										</li>
+									</ul>
+
+									<div class="action-box">
+        								<span class="like pointer">
+											<a href="#" >
+												<span class="">
+													<div class="flex-wrap justify-center align-items-center">
+														<li-icon aria-hidden="true" type="thumbs-up-outline" >
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+																<path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+															</svg>
+														</li-icon>
+
+														<span>
+														Like
+														</span>
+													</div>
+												</span>
+											</a>
+										</span>
+
+										<span class="comment pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="speech-bubble-icon" class="">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+														<path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Comment
+												</span>
+											</a>
+										</span>
+			  
+										<span class="share pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="share-linkedin-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+														<path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Share
+												</span>
+											</a>
+										</span>
+										
+									</div>
+
+									<div class="comment-box d-flex justify-content-center align-items-center">
+    									<div class="">
+											<img class="profile-post" src="assets/images/avatar.png">
+										</div>
+             							<input class="form-control form-control-md box-border mx-3 my-2" placeholder="Add a comment...">
+									</div>
+								</div>
+							</div>
+
+							<!-- Article -->
+							<div class="card box-border">
+								<div class="card-body p-0 my-2 mx-4">
+									<div class="d-flex align-items-center mb-2">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png" >
+											</div>
+										</a>
+										<div class="my-auto mx-2">
+											<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">Ahmed Alaa</a>
+											<small style="line-height: 0;">29/6/2022 </small>
+										</div>
+									</div>
+
+									<p class="text-dark">Here's the last update of lineups between two teams</p>
+
+									<a data-fslightbox="gallery4" href="assets/images/post-1.jpg">
+										<img width="600" src="assets/images/post-1.jpg" height="600" alt="" class=" ">
+									</a>
+									
+									<ul class="post-stat">
+										<li>
+											<a href="#">
+												<img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+												<span>22</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span aria-hidden="true">
+												18 comments
+												</span>
+											</a>
+										</li>
+									</ul>
+
+									<div class="action-box">
+        								<span class="like pointer">
+											<a href="#" >
+												<span class="">
+													<div class="flex-wrap justify-center align-items-center">
+														<li-icon aria-hidden="true" type="thumbs-up-outline" >
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+																<path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+															</svg>
+														</li-icon>
+
+														<span>
+														Like
+														</span>
+													</div>
+												</span>
+											</a>
+										</span>
+
+										<span class="comment pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="speech-bubble-icon" class="">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+														<path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Comment
+												</span>
+											</a>
+										</span>
+			  
+										<span class="share pointer">
+											<a href="#">  
+												<li-icon aria-hidden="true" type="share-linkedin-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+														<path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+													</svg>
+												</li-icon>
+												<span>
+													Share
+												</span>
+											</a>
+										</span>
+										
+									</div>
+
+									<div class="comment-box d-flex justify-content-center align-items-center">
+    									<div class="">
+											<img class="profile-post" src="assets/images/avatar.png">
+										</div>
+             							<input class="form-control form-control-md box-border mx-3 my-2" placeholder="Add a comment...">
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Articles - End -->
+
+						<!-- Right Cards - Start -->
+						<div class="col-md-3">
+			
+							<!-- Widget: Latest Results -->
+							<aside class="widget card widget--sidebar widget-results aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+								<div class="widget__title card__header card__header--has-btn">
+									<h4>Latest Results</h4>
+								</div>
+								<div class="widget__content card__content">
+									<ul class="widget-results__list">
+							
+										<!-- Game #0 -->
+										<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+											<div class="widget-results__header justify-content-center">
+												<div class="widget-results__title">Saturday, March 24</div>
+											</div>
+											<div class="widget-results__content">
+												<div class="widget-results__team widget-results__team--first">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL ITTIHAD FC</h5>
+													</div>
+												</div>
+												<div class="widget-results__result">
+													<div class="widget-results__score">
+														<span class="widget-results__score-winner">2</span> - <span class="widget-results__score-loser">0</span>
+														<div class="widget-results__status">Home</div>
+													</div>
+												</div>
+												<div class="widget-results__team widget-results__team--second">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL SHABAB FC</h5>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- Game #0 / End -->
+										<!-- Game #1 -->
+										<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+											<div class="widget-results__header justify-content-center">
+												<div class="widget-results__title">Friday, March 16</div>
+											</div>
+											<div class="widget-results__content">
+												<div class="widget-results__team widget-results__team--first">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL ITTIHAD FC</h5>
+													</div>
+												</div>
+												<div class="widget-results__result">
+													<div class="widget-results__score">
+														<span class="widget-results__score-winner">4</span> - <span class="widget-results__score-loser">2</span>
+														<div class="widget-results__status">Home</div>
+													</div>
+												</div>
+												<div class="widget-results__team widget-results__team--second">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">Al Nassr FC</h5>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- Game #1 / End -->
+										<!-- Game #2 -->
+										<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+											<div class="widget-results__header justify-content-center">
+												<div class="widget-results__title">Saturday, March 10</div>
+											</div>
+											<div class="widget-results__content">
+												<div class="widget-results__team widget-results__team--first">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">Al Fateh SC</h5>
+													</div>
+												</div>
+												<div class="widget-results__result">
+													<div class="widget-results__score">
+														<span class="widget-results__score-loser">0</span> - <span class="widget-results__score-loser">0</span>
+														<div class="widget-results__status">Away</div>
+													</div>
+												</div>
+												<div class="widget-results__team widget-results__team--second">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL ITTIHAD FC</h5>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- Game #2 / End -->
+										<!-- Game #3 -->
+										<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+											<div class="widget-results__header justify-content-center">
+												<div class="widget-results__title">Friday, March 4</div>
+											</div>
+											<div class="widget-results__content">
+												<div class="widget-results__team widget-results__team--first">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">Al Hilal FC</h5>
+													</div>
+												</div>
+												<div class="widget-results__result">
+													<div class="widget-results__score">
+														<span class="widget-results__score-loser">2</span> - <span class="widget-results__score-winner">3</span>
+														<div class="widget-results__status">Away</div>
+													</div>
+												</div>
+												<div class="widget-results__team widget-results__team--second">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL ITTIHAD FC</h5>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- Game #3 / End -->
+										<!-- Game #4 -->
+										<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+											<div class="widget-results__header justify-content-center">
+												<div class="widget-results__title">Friday, March 16</div>
+											</div>
+											<div class="widget-results__content">
+												<div class="widget-results__team widget-results__team--first">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">AL ITTIHAD FC</h5>
+													</div>
+												</div>
+												<div class="widget-results__result">
+													<div class="widget-results__score">
+														<span class="widget-results__score-winner">4</span> - <span class="widget-results__score-loser">2</span>
+														<div class="widget-results__status">Home</div>
+													</div>
+												</div>
+												<div class="widget-results__team widget-results__team--second">
+													<figure class="widget-results__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
+													</figure>
+													<div class="widget-results__team-details">
+														<h5 class="widget-results__team-name">Al Nassr FC</h5>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- Game #4 / End -->
+							
+									</ul>
+								</div>
+							</aside>
+							<!-- Widget: Latest Results / End -->
+				
+							<!-- Widget: Match Announcement -->
+							<aside class="widget widget--sidebar card widget-preview aos-init aos-animate" data-aos="zoom-out" data-aos-duration="1000">
+								<div class="widget__title card__header">
+									<h4>Next Match</h4>
+								</div>
+								<div class="widget__content card__content">
+							
+									<!-- Match Preview -->
+									<div class="match-preview">
+										<section class="match-preview__body">
+											<header class="match-preview__header">
+												<time class="match-preview__date" datetime="2022-03-17">Friday March 17th</time>
+												<h3 class="match-preview__title match-preview__title--lg">Quarter Finals</h3>
+											</header>
+											<div class="match-preview__content">
+							
+												<!-- 1st Team -->
+												<div class="match-preview__team match-preview__team--first">
+													<figure class="match-preview__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-ittihad-fc-jeddah_thumb.png" alt="">
+													</figure>
+													<h5 class="match-preview__team-name">Al Ittihad FC </h5>
+												</div>
+												<!-- 1st Team / End -->
+							
+												<div class="match-preview__vs">
+													<div class="match-preview__conj">VS</div>
+													<div class="match-preview__match-info">
+														<time class="match-preview__match-time" datetime="2022-03-17 09:00">9:00 PM</time>
+														<div class="match-preview__match-place">King Fahd Stadium</div>
+													</div>
+												</div>
+							
+												<!-- 2nd Team -->
+												<div class="match-preview__team match-preview__team--second">
+													<figure class="match-preview__team-logo">
+														<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
+													</figure>
+													<h5 class="match-preview__team-name">Al Hilal FC </h5>
+												</div>
+												<!-- 2nd Team / End -->
+							
+											</div>
+										</section>
+										<div class="countdown__content">
+											<div class="countdown-counter" data-date="June 18, 2022 21:00:00"></div>
+										</div>
+									</div>
+									<!-- Match Preview / End -->
+							
+								</div>
+							</aside>
+							<!-- Widget: Match Announcement / End -->
+
+						</div>
+						<!-- Right Cards - End -->
+							
+					</div>
+				</div>
+			</section>
+
+		</div>
+		
+		<!-- Content / End -->
+		
+
+		<!-- Footer
+		================================================== -->
+		<footer id="footer" class="footer">
+		
+			<!-- Footer Secondary -->
+			<div class="footer-secondary">
+				<div class="container">
+					<div class="footer-secondary__inner py-2">
+						<div class="row">
+							<div class="col-12">
+								<p class="text-center m-0 p-0" style="font-weight: bold;font-size: 12pt;color: #fff;font-family: Raleway, sans-serif;padding: 10px 0;">Powered By 
+                                    <a href="https://armasoftware.com/">
+                                        <img width="70" class=" ls-is-cached lazyloaded" data-src="https://armasoftware.com/arma_logo.png" src="https://armasoftware.com/arma_logo.png"> 
+                                    </a>
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Secondary / End -->
+		</footer>
+		<!-- Footer / End -->
+		
+		
+
+	</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content box-border">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Create a post</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="d-flex align-items-center mb-2">
+				<a href="#">
+					<div class="">
+						<img class="profile-post" src="assets/images/avatar.png">
+					</div>
+				</a>
+				<div class="my-auto mx-2">
+					<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">User Name</a>
+				</div>
+			</div>
+			<textarea class="form-control" placeholder="What do you want to talk about?" cols="30" rows="7" style="border: unset;"></textarea>
+		</div>
+		<div class="modal-footer" style="border-top: unset;">
+			<div class="d-flex mr-auto">
+				<button class="btn-action-post btn btn-sm btn-dark p-1 mx-1">  
+					<li-icon aria-hidden="true" type="image-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+							<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+						</svg>
+					</li-icon>
+				</button>
+
+				<button class="btn-action-post btn btn-sm btn-dark p-1 mx-1">  
+					<li-icon aria-hidden="true" type="image-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+							<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+						</svg>
+					</li-icon>
+				</button>
+				
+				<button class="btn-action-post btn btn-sm btn-dark p-1 mx-1">  
+						<li-icon aria-hidden="true" type="analytics" class="artdeco-button__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+							<path d="M23 20v1H1v-1zM8 9H2v10h6zm7-6H9v16h6zm7 11h-6v5h6z"></path>
+						</svg>
+					</li-icon>
+				</button>
+			</div>
+
+		  	<button type="button" class="btn btn-sm btn-border btn-secondary" data-dismiss="modal">Cancel</button>
+		  	<button type="button" class="btn btn-sm btn-border btn-primary">Post</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="assets/js/fslightbox.js"></script>
+
+	
+	
+	<!-- Template JS -->
+	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+</html>

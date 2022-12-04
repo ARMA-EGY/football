@@ -1,0 +1,297 @@
+
+body, .player-info__item--stats-inner, .meta__item--date
+{
+    direction: rtl;
+}
+
+.slick-slider, .footer-secondary__inner, .progress-double-container, .team-roster, .game-result__content, .widget-lineup
+{
+    direction: ltr;
+}
+
+.header-logo 
+{
+    right: 0;
+    left: unset;
+}
+
+.header--layout-1 .header__primary-inner::before 
+{
+    right: -25px;
+    left: unset;
+}
+
+.main-nav, .widget-player__details-value
+{
+    text-align: left;
+}
+
+.pushy-panel__toggle 
+{
+    width: 120px;
+    margin-right: 27px;
+}
+
+.pushy-panel__toggle i, .fa-sign-in-alt
+{
+    transform: rotate(180deg);
+    margin: 0 5px;
+}
+
+.modal-account__item, .modal--login
+{
+    direction: rtl;
+    text-align: right;
+}
+
+.checkbox.checkbox-inline 
+{
+    padding-right: 24px;
+    padding-left: unset;
+}
+
+.checkbox .checkbox-indicator 
+{
+    right: 0;
+    left: unset;
+}
+
+.team-roster__player-stats
+{
+    direction: rtl;
+    text-align: right;
+}
+
+.overview-box .content 
+{
+    padding-right: 20px;
+    padding-left: unset;
+}
+
+.alc-teams-legend__info 
+{
+    margin-right: auto;
+    margin-left: unset;
+}
+
+.widget-standings .table-standings > thead > tr > th:first-child 
+{
+    text-align: center;
+}
+
+.team-meta__logo 
+{
+    margin-inline-end: 5px;
+    margin-inline-start: 5px;
+}
+
+.progress__label + .progress 
+{
+    margin-right: 10px;
+}
+
+.chart-legend ul > li 
+{
+    padding-right: 20px;
+    padding-left: unset;
+}
+
+.chart-legend ul > li > span 
+{
+    margin-left: 10px;
+}
+
+.chart-legend--center ul > li > span 
+{
+    margin: 0 auto 10px auto !important;
+}
+
+.widget-results__score-winner:before 
+{
+    margin-right: unset;
+    margin-left: 0.5em;
+    transform: rotate(180deg);
+}
+
+.widget-results__score-loser ~ .widget-results__score-winner::after 
+{
+    margin-left: unset;
+    margin-right: 0.5em;
+    transform: rotate(180deg);
+}
+
+/* .table > thead:first-child > tr:first-child > th
+{
+    text-align: center;
+} */
+
+.playerOverviewCard dd 
+{
+    float: left;
+}
+
+.playerOverviewCard dt 
+{
+    float: right;
+}
+
+.squadPlayerStats 
+{
+    padding-left: 20px;
+}
+
+.matches .matchList 
+{
+    padding-right: 10px;
+}
+
+.matches .quickView 
+{
+    right: unset;
+    left: 5rem;
+}
+
+.fixture--large .team, .fixture .team 
+{
+    padding-right: 6.8rem;
+    padding-left: unset;
+}
+
+.fixture--large .team:first-of-type, .fixture .team:first-of-type 
+{
+    padding-right: 1rem;
+}
+
+.fixture--large .team:first-of-type .badge, .fixture .team:first-of-type .badge 
+{
+    left: 4rem;
+    right: unset;
+}
+
+.fixture--large .team:not(:first-of-type) .badge, .fixture .team:not(:first-of-type) .badge 
+{
+    right: 4.3rem;
+    left: unset;
+}
+
+.matches .date 
+{
+    padding: 0 10px;
+}
+
+.matches .quickView i 
+{
+    transform: rotate(180deg);
+}
+
+.game-timeline--adaptive 
+{
+    margin-right: 45px;
+    margin-left: unset;
+}
+
+.alc-event-info 
+{
+    padding-right: 0;
+    padding-left: 1rem;
+    text-align: right;
+}
+
+.alc-event-info__icon 
+{
+    margin-left: 12px;
+    margin-right: unset;
+}
+
+.alc-staff-details__value 
+{
+    min-width: 45%;
+    flex-basis: 45%;
+    text-align: right;
+}
+
+.main-nav__list > li.has-children > a::after 
+{
+    margin-right: 9px;
+    margin-left: unset;
+}
+
+.overview-box, .about-us-content-item, .team-meta__name, .matches, .alc-staff-excerpt, .widget-player__details-holder, .main-nav__sub li a, .posts, .widget-results__team--first, .comments, .comment-form
+{
+    text-align: right;
+}
+
+.widget-results__team--second
+{
+    text-align: left;
+}
+
+.widget-results__team--second .widget-results__team-logo 
+{
+    float: left;
+}
+
+.widget-lineup .card__header
+{
+    display: block;
+    text-align: right;
+}
+
+.text-left 
+{
+    text-align: right !important;
+}
+
+.team-schedule .team-schedule__date, .team-schedule .team-schedule__versus, .team-schedule .team-schedule__compet, .team-schedule .team-schedule__venue 
+{
+    text-align: center;
+}
+
+.modal-header .close 
+{
+    padding: 15px;
+    margin: -1rem;
+    margin-right: auto;
+}
+
+@media (min-width: 992px)
+{
+    .nav-account 
+    {
+        padding-right: 30px;
+    }
+
+    .nav-account .nav-account__item.has-children::after 
+    {
+        margin-right: 9px;
+    }
+
+    .nav-account .nav-account__item.has-children ul li a 
+    {
+        text-align: right;
+    }
+
+    .modal-form .form-group--pass-reminder a 
+    {
+        float: left;
+    }
+
+    .widget-results__team--second .widget-results__team-logo 
+    {
+        margin-right: 8px;
+    }
+
+    .comment__reply 
+    {
+        left: 0;
+        right: unset;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .offset-md-1 
+    {
+        margin-right: 8.33333333%;
+    }
+}

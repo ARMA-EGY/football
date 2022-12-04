@@ -38,6 +38,8 @@
 
 	<!-- Template CSS-->
 	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- RTL CSS-->
+	<link href="assets/css/style-rtl.css" rel="stylesheet">
 
 </head>
 <body >
@@ -51,7 +53,7 @@
 		<!-- Header Mobile -->
 		<div class="header-mobile clearfix" id="header-mobile">
 			<div class="header-mobile__logo">
-				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+				<a href="index-ar.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
 			</div>
 			<div class="header-mobile__inner">
 				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
@@ -69,28 +71,28 @@
 		
 						<!-- Header Logo -->
 						<div class="header-logo">
-							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+							<a href="index-ar.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
 						</div>
 						<!-- Header Logo / End -->
 		
 						<!-- Main Navigation -->
 						<nav class="main-nav clearfix">
 							<ul class="main-nav__list">
-								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-								<li class="active"><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
-								<li class=""><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
-								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
-								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+								<li class=""><a href="index-ar.html"><i class="fa fa-home"></i> الرئيسية</a></li>
+								<li class="active"><a href="stats-ar.html"><i class="fa fa-chart-pie"></i> الاحصائيات</a></li>
+								<li class=""><a href="clubs-ar.html"><i class="fa fa-flag"></i> الأندية</a></li>
+								<li class=""><a href="matches-ar.html"><i class="fa fa-futbol"></i> المباريات</a></li>
+								<li class=""><a href="compare-ar.html"><i class="fas fa-exchange-alt"></i> المقارنات</a></li>
 							</ul>
 
 							<!-- Languages -->
 							<ul class="nav-account">
 								<li class="nav-account__item has-children">
 									<span class="main-nav__toggle"></span>
-									<a href="#">Language: <span class="highlight">EN</span></a>
+									<a href="#">اللغة: <span class="highlight"> العربية</span></a>
 									<ul class="main-nav__sub">
-										<li><a href="index.html">English</a></li>
-										<li><a href="index-ar.html">Arabic</a></li>
+										<li><a href="index.html">الانجليزية</a></li>
+										<li><a href="#">العربية</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -112,7 +114,7 @@
 		
 							<!-- Pushy Panel Toggle -->
 							<a href="#" data-toggle="modal" data-target="#modal-login-register-tabs" class="pushy-panel__toggle text-center text-white">
-								<i class="fa fa-sign-in-alt"></i> Login
+								<i class="fa fa-sign-in-alt"></i> تسجيل الدخول
 							</a>
 							<!-- Pushy Panel Toggle / Eng -->
 						</nav>
@@ -133,7 +135,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<h1 class="page-heading__title">Stats For <span class="highlight">2021/2022</span></h1>
+						<h1 class="page-heading__title"> احصائيات لعام  <span class="highlight">2021/2022</span></h1>
 					</div>
 				</div>
 			</div>
@@ -152,19 +154,19 @@
 						<!-- Widget: Standings -->
 						<aside class="widget card widget--sidebar widget-standings aos-init aos-animate" data-aos="flip-right" data-aos-duration="1000">
 							<div class="widget__title card__header card__header--has-btn">
-								<h4>Top 5 Table 2021/22</h4>
-								<a href="clubs.html" class="btn btn-default btn-outline btn-xs card-header__button">See All</a>
+								<h4>أعلى 5 في الجدول 2021/22</h4>
+								<a href="clubs-ar.html" class="btn btn-default btn-outline btn-xs card-header__button">مشاهدة الكل</a>
 							</div>
 							<div class="widget__content card__content">
 								<div class="table-responsive">
 									<table class="table table-hover table-standings">
 										<thead>
 											<tr>
-												<th>Team Positions</th>
-												<th>W</th>
-												<th>L</th>
-												<th>D</th>
-												<th>PTS</th>
+												<th>ترتيب الفريق</th>
+												<th>ف</th>
+												<th>خ</th>
+												<th>ت</th>
+												<th>نقاط</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -261,7 +263,7 @@
 						<div class="widget card widget--sidebar aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 							<div class="widget__title card__header">
 								<h4><img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="" width="30px"> AL HILAL FC</h4>
-								<a href="club.html" class="btn btn-default btn-outline btn-xs card-header__button">Full Stats</a>
+								<a href="club-ar.html" class="btn btn-default btn-outline btn-xs card-header__button">الاحصائيات كاملة</a>
 							</div>
 							<div class="widget__content card__content">
 								<canvas id="chart-doughnut-soccer-3" height="208"></canvas>
@@ -273,7 +275,7 @@
 						<!-- Widget: Assists -->
 						<aside class="widget widget--sidebar card card--has-table widget-leaders aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
 							<div class="widget__title card__header justify-content-center bg-light">
-								<h4>Top Assists</h4>
+								<h4>افضل تمريرات حاسمة</h4>
 							</div>
 							<div class="widget__content card__content">
 								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
@@ -296,18 +298,18 @@
 								
 												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
 													<div class="widget-player__stat-number">12</div>
-													<h6 class="widget-player__stat-label">Assists</h6>
+													<h6 class="widget-player__stat-label">تمريرات حاسمة</h6>
 												</div>
 												<div class="widget-player__stat widget-player__games" style="width: 50%;">
 													<div class="widget-player__stat-number">16</div>
-													<h6 class="widget-player__stat-label">Play</h6>
+													<h6 class="widget-player__stat-label">مباريات</h6>
 												</div>
 											</div>
 								
 											<div class="widget-player__content-alt">
 												<!-- Progress: Shot Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">SHOT ACC</div>
+													<div class="progress__label">دقة التصويب</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -317,7 +319,7 @@
 								
 												<!-- Progress: Pass Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">PASS ACC</div>
+													<div class="progress__label">دقة التمريرات</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -334,10 +336,10 @@
 									<table class="table team-leader">
 										<thead>
 											<tr>
-												<th class="team-leader__type">Player</th>
-												<th class="team-leader__goals">A</th>
-												<th class="team-leader__gp">P</th>
-												<th class="team-leader__avg">AVG</th>
+												<th class="team-leader__type">اللاعب</th>
+												<th class="team-leader__goals">ت</th>
+												<th class="team-leader__gp">م</th>
+												<th class="team-leader__avg">اداء</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -427,8 +429,8 @@
 						<!-- Widget: Latest Results -->
 						<aside class="widget card widget--sidebar widget-results aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
 							<div class="widget__title card__header card__header--has-btn">
-								<h4>Latest Results</h4>
-								<a href="club-results.html" class="btn btn-default btn-outline btn-xs card-header__button">See Full Results</a>
+								<h4>أحدث النتائج</h4>
+								<a href="club-results-ar.html" class="btn btn-default btn-outline btn-xs card-header__button">عرض جميع النتائج</a>
 							</div>
 							<div class="widget__content card__content">
 								<ul class="widget-results__list">
@@ -436,7 +438,7 @@
 									<!-- Game #0 -->
 									<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 										<div class="widget-results__header justify-content-center">
-											<div class="widget-results__title">Saturday, March 24</div>
+											<div class="widget-results__title">السبت 24 مارس</div>
 										</div>
 										<div class="widget-results__content">
 											<div class="widget-results__team widget-results__team--first">
@@ -467,7 +469,7 @@
 									<!-- Game #1 -->
 									<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 										<div class="widget-results__header justify-content-center">
-											<div class="widget-results__title">Friday, March 16</div>
+											<div class="widget-results__title">الجمعة 16 مارس</div>
 										</div>
 										<div class="widget-results__content">
 											<div class="widget-results__team widget-results__team--first">
@@ -498,7 +500,7 @@
 									<!-- Game #2 -->
 									<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 										<div class="widget-results__header justify-content-center">
-											<div class="widget-results__title">Saturday, March 10</div>
+											<div class="widget-results__title">السبت 10 مارس</div>
 										</div>
 										<div class="widget-results__content">
 											<div class="widget-results__team widget-results__team--first">
@@ -529,7 +531,7 @@
 									<!-- Game #3 -->
 									<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 										<div class="widget-results__header justify-content-center">
-											<div class="widget-results__title">Friday, March 4</div>
+											<div class="widget-results__title">الجمعة 4 مارس</div>
 										</div>
 										<div class="widget-results__content">
 											<div class="widget-results__team widget-results__team--first">
@@ -560,7 +562,7 @@
 									<!-- Game #4 -->
 									<li class="widget-results__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 										<div class="widget-results__header justify-content-center">
-											<div class="widget-results__title">Friday, March 16</div>
+											<div class="widget-results__title">الجمعة 16 مارس</div>
 										</div>
 										<div class="widget-results__content">
 											<div class="widget-results__team widget-results__team--first">
@@ -597,7 +599,7 @@
 						<!-- Widget: Manager -->
 						<div class="aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
 							<div class="card text-center player_card playerOverviewCard hvr-float-shadow" style="width: 100%;">
-								<a href="coach.html">
+								<a href="coach-ar.html">
 									<header class="squadPlayerHeader">
 										<img class="img statCardImg" src="https://resources.premierleague.com/premierleague/photos/players/110x140/man37974.png" alt="">
 										<span class="playerCardInfo">
@@ -609,30 +611,30 @@
 										<ul class="squadPlayerStats">
 											<li>
 												<dl>
-												<dt class="label">Matches</dt>
+												<dt class="label">المباريات</dt>
 													<dd class="info">30</dd>
 												</dl>
 											</li>
 											<li>
 												<dl>
-													<dt class="label">Wins</dt>
+													<dt class="label">فوز</dt>
 													<dd class="info">19</dd>
 												</dl>
 											</li>
 											<li>
 												<dl>
-													<dt class="label">Draws</dt>
+													<dt class="label">تعادل</dt>
 													<dd class="info">6</dd>
 												</dl>
 											</li>
 											<li>
 												<dl>
-													<dt class="label">Losses</dt>
+													<dt class="label">خسارة</dt>
 													<dd class="info">5</dd>
 												</dl>
 											</li>
 										</ul>
-										<a href="coach.html" class="btn rounded player_btn">Manager Profile <i class="fas fa-long-arrow-alt-right mx-2"></i></a>
+										<a href="coach-ar.html" class="btn rounded player_btn">الملف الشخصي للمدرب <i class="fas fa-long-arrow-alt-right mx-2"></i></a>
 									</div>
 								</a>
 							</div>
@@ -642,7 +644,7 @@
 						<!-- Widget: Goals -->
 						<aside class="widget widget--sidebar card card--has-table widget-leaders aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">
 							<div class="widget__title card__header justify-content-center">
-								<h4>Top Scorers</h4>
+								<h4>أفضل الهدافين</h4>
 							</div>
 							<div class="widget__content card__content">
 								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
@@ -665,18 +667,18 @@
 								
 												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
 													<div class="widget-player__stat-number">20</div>
-													<h6 class="widget-player__stat-label">Goals</h6>
+													<h6 class="widget-player__stat-label">الاهداف</h6>
 												</div>
 												<div class="widget-player__stat widget-player__games" style="width: 50%;">
 													<div class="widget-player__stat-number">18</div>
-													<h6 class="widget-player__stat-label">Play</h6>
+													<h6 class="widget-player__stat-label">المباريات</h6>
 												</div>
 											</div>
 								
 											<div class="widget-player__content-alt">
 												<!-- Progress: Shot Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">SHOT ACC</div>
+													<div class="progress__label">دقة التصويب</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -686,7 +688,7 @@
 								
 												<!-- Progress: Pass Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">PASS ACC</div>
+													<div class="progress__label">دقة التمريرات</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -703,10 +705,10 @@
 									<table class="table team-leader">
 										<thead>
 											<tr>
-												<th class="team-leader__type">Player</th>
-												<th class="team-leader__goals">G</th>
-												<th class="team-leader__gp">P</th>
-												<th class="team-leader__avg">AVG</th>
+												<th class="team-leader__type">اللاعب</th>
+												<th class="team-leader__goals">ج</th>
+												<th class="team-leader__gp">م</th>
+												<th class="team-leader__avg">متوسط</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -796,8 +798,8 @@
 						<!-- Widget: Match Announcement -->
 						<aside class="widget widget--sidebar card widget-preview aos-init aos-animate" data-aos="zoom-out" data-aos-duration="1000">
 							<div class="widget__title card__header">
-								<h4>Next Match</h4>
-								<a href="matches.html" class="btn btn-default btn-outline btn-xs card-header__button">See All</a>
+								<h4>المباراة القادمة</h4>
+								<a href="matches-ar.html" class="btn btn-default btn-outline btn-xs card-header__button">عرض الكل</a>
 							</div>
 							<div class="widget__content card__content">
 						
@@ -805,8 +807,8 @@
 								<div class="match-preview">
 									<section class="match-preview__body">
 										<header class="match-preview__header">
-											<time class="match-preview__date" datetime="2022-03-17">Friday March 17th</time>
-											<h3 class="match-preview__title match-preview__title--lg">Quarter Finals</h3>
+											<time class="match-preview__date" datetime="2022-03-17">الجمعة 17 مارس</time>
+											<h3 class="match-preview__title match-preview__title--lg">الدور ربع النهائي</h3>
 										</header>
 										<div class="match-preview__content">
 						
@@ -852,7 +854,7 @@
 						<div class="widget card widget--sidebar aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 							<div class="widget__title card__header">
 								<h4><img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="" width="30px"> AL SHABAB FC</h4>
-								<a href="club.html" class="btn btn-default btn-outline btn-xs card-header__button">Full Stats</a>
+								<a href="club-ar.html" class="btn btn-default btn-outline btn-xs card-header__button">الاحصائيات كاملة</a>
 							</div>
 							<div class="widget__content card__content">
 								<canvas id="chart-doughnut-soccer-4" height="208"></canvas>
@@ -864,7 +866,7 @@
 						<!-- Widget: Clean Sheet -->
 						<aside class="widget widget--sidebar card card--has-table widget-leaders aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 							<div class="widget__title card__header justify-content-center bg-light">
-								<h4>Clean Sheets</h4>
+								<h4>نظافة الشباك</h4>
 							</div>
 							<div class="widget__content card__content">
 								<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
@@ -887,18 +889,18 @@
 								
 												<div class="widget-player__stat widget-player__goals" style="width: 50%;">
 													<div class="widget-player__stat-number">36</div>
-													<h6 class="widget-player__stat-label">Shots</h6>
+													<h6 class="widget-player__stat-label">تسديدات</h6>
 												</div>
 												<div class="widget-player__stat widget-player__games" style="width: 50%;">
 													<div class="widget-player__stat-number">15</div>
-													<h6 class="widget-player__stat-label">Play</h6>
+													<h6 class="widget-player__stat-label">مباريات</h6>
 												</div>
 											</div>
 								
 											<div class="widget-player__content-alt">
 												<!-- Progress: Shot Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">SHOT ACC</div>
+													<div class="progress__label">دقة التصويب</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -908,7 +910,7 @@
 								
 												<!-- Progress: Pass Accuracy -->
 												<div class="progress-stats">
-													<div class="progress__label">PASS ACC</div>
+													<div class="progress__label">دقة التمريرات</div>
 													<div class="progress">
 														<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
@@ -925,10 +927,10 @@
 									<table class="table team-leader">
 										<thead>
 											<tr>
-												<th class="team-leader__type">Player</th>
-												<th class="team-leader__goals">S</th>
-												<th class="team-leader__gp">P</th>
-												<th class="team-leader__avg">AVG</th>
+												<th class="team-leader__type">اللاعب</th>
+												<th class="team-leader__goals">ت</th>
+												<th class="team-leader__gp">م</th>
+												<th class="team-leader__avg">اداء</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -1021,7 +1023,7 @@
 						<!-- Points History -->
 						<div class="card aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
 							<div class="card__header card__header--has-legend">
-								<h4>Points History</h4>
+								<h4>سجل النقاط</h4>
 								<div id="gamesPoinstsLegendSoccer" class="chart-legend"></div>
 							</div>
 							<div class="card__content">
@@ -1036,7 +1038,7 @@
 						<!-- Widget: Games History -->
 						<aside class="widget card widget--sidebar widget-games-history aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 							<div class="widget__title card__header card__header--has-legend">
-								<h4>Games History</h4>
+								<h4>تاريخ المباريات</h4>
 								<div id="gamesHistoryLegendSoccer" class="chart-legend chart-legend--games-history"></div>
 							</div>
 							<div class="widget__content card__content">
@@ -1082,7 +1084,7 @@
 		
 										<!-- Progress: Shot Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Shot Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التصويب</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1091,7 +1093,7 @@
 										<!-- Progress: Shot Accuracy / End -->
 										<!-- Progress: Pass Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Pass Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التمريرات</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1100,7 +1102,7 @@
 										<!-- Progress: Pass Accuracy / End -->
 										<!-- Progress: Performance -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Performance</div>
+											<div class="progress__label progress__label--color-default">الأداء</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1118,19 +1120,19 @@
 		
 									<div class="team-roster__meta-item team-roster__meta-item--lg">
 										<div class="team-roster__meta-value">104</div>
-										<div class="team-roster__meta-label">Games</div>
+										<div class="team-roster__meta-label">المباريات</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">86</div>
-										<div class="team-roster__meta-label">Goals</div>
+										<div class="team-roster__meta-label">الأهداف</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">30</div>
-										<div class="team-roster__meta-label">Assists</div>
+										<div class="team-roster__meta-label">تمريرات حاسمة</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">L</div>
-										<div class="team-roster__meta-label">Foot</div>
+										<div class="team-roster__meta-label">القدم</div>
 									</div>
 								</aside>
 								<!-- Player1 Meta Info / End -->
@@ -1140,19 +1142,19 @@
 		
 									<div class="team-roster__meta-item team-roster__meta-item--lg">
 										<div class="team-roster__meta-value">105</div>
-										<div class="team-roster__meta-label">Games</div>
+										<div class="team-roster__meta-label">المباريات</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">97</div>
-										<div class="team-roster__meta-label">Goals</div>
+										<div class="team-roster__meta-label">الأهداف</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">18</div>
-										<div class="team-roster__meta-label">Assists</div>
+										<div class="team-roster__meta-label">تمريرات حاسمة</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">R</div>
-										<div class="team-roster__meta-label">Foot</div>
+										<div class="team-roster__meta-label">القدم</div>
 									</div>
 								</aside>
 								<!-- Player2 Meta Info / End -->
@@ -1177,7 +1179,7 @@
 		
 										<!-- Progress: Shot Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Shot Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التصويب</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1186,7 +1188,7 @@
 										<!-- Progress: Shot Accuracy / End -->
 										<!-- Progress: Pass Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Pass Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التمريرات</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1195,7 +1197,7 @@
 										<!-- Progress: Pass Accuracy / End -->
 										<!-- Progress: Performance -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Performance</div>
+											<div class="progress__label progress__label--color-default">الأداء</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1252,7 +1254,7 @@
 		
 										<!-- Progress: Shot Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Shot Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التصويب</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1261,7 +1263,7 @@
 										<!-- Progress: Shot Accuracy / End -->
 										<!-- Progress: Pass Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Pass Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التمريرات</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1270,7 +1272,7 @@
 										<!-- Progress: Pass Accuracy / End -->
 										<!-- Progress: Performance -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Performance</div>
+											<div class="progress__label progress__label--color-default">الأداء</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1288,19 +1290,19 @@
 		
 									<div class="team-roster__meta-item team-roster__meta-item--lg">
 										<div class="team-roster__meta-value">104</div>
-										<div class="team-roster__meta-label">Games</div>
+										<div class="team-roster__meta-label">المباريات</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">86</div>
-										<div class="team-roster__meta-label">Goals</div>
+										<div class="team-roster__meta-label">الأهداف</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">30</div>
-										<div class="team-roster__meta-label">Assists</div>
+										<div class="team-roster__meta-label">تمريرات حاسمة</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">L</div>
-										<div class="team-roster__meta-label">Foot</div>
+										<div class="team-roster__meta-label">القدم</div>
 									</div>
 								</aside>
 								<!-- Player1 Meta Info / End -->
@@ -1310,19 +1312,19 @@
 		
 									<div class="team-roster__meta-item team-roster__meta-item--lg">
 										<div class="team-roster__meta-value">105</div>
-										<div class="team-roster__meta-label">Games</div>
+										<div class="team-roster__meta-label">المباريات</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">97</div>
-										<div class="team-roster__meta-label">Goals</div>
+										<div class="team-roster__meta-label">الأهداف</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">18</div>
-										<div class="team-roster__meta-label">Assists</div>
+										<div class="team-roster__meta-label">تمريرات حاسمة</div>
 									</div>
 									<div class="team-roster__meta-item ">
 										<div class="team-roster__meta-value">R</div>
-										<div class="team-roster__meta-label">Foot</div>
+										<div class="team-roster__meta-label">القدم</div>
 									</div>
 								</aside>
 								<!-- Player2 Meta Info / End -->
@@ -1347,7 +1349,7 @@
 		
 										<!-- Progress: Shot Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Shot Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التصويب</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1356,7 +1358,7 @@
 										<!-- Progress: Shot Accuracy / End -->
 										<!-- Progress: Pass Accuracy -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Pass Accuracy</div>
+											<div class="progress__label progress__label--color-default">دقة التمريرات</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1365,7 +1367,7 @@
 										<!-- Progress: Pass Accuracy / End -->
 										<!-- Progress: Performance -->
 										<div class="progress-stats mb-20">
-											<div class="progress__label progress__label--color-default">Performance</div>
+											<div class="progress__label progress__label--color-default">الأداء</div>
 											<div class="progress">
 												<div class="progress__bar progress__bar--success progress__bar-width-80" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
@@ -1436,7 +1438,7 @@
 						<div class="modal-account-holder">
 							<div class="modal-account__item modal-account__item--logo" style="background-image: url('assets/images/login.jpg');">
 								<div class="overlay"></div>
-								<p class="modal-account__item-register-txt">Don’t have an account? <b>Register Now</b> and enjoy all our benefits!</p>
+								<p class="modal-account__item-register-txt">ليس لديك حساب؟ سجل الآن واستمتع بجميع المزايا</p>
 							</div>
 							<div class="modal-account__item">
 		
@@ -1448,25 +1450,25 @@
 		
 										<!-- Login Form -->
 										<form action="#" class="modal-form">
-											<h5>Login to your account</h5>
+											<h5>تسجيل الدخول إلى حسابك</h5>
 											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
+												<input type="email" class="form-control" placeholder="أدخل بريدك الالكتروني">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
+												<input type="password" class="form-control" placeholder="أدخل كلمة المرور">
 											</div>
 											<div class="form-group form-group--pass-reminder">
 												<label class="checkbox checkbox-inline">
-													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> Remember Me
+													<input type="checkbox" id="inlineCheckbox1" value="option1" checked> تذكرنى
 													<span class="checkbox-indicator"></span>
 												</label>
-												<a href="#">Forgot your password?</a>
+												<a href="#">هل نسيت كلمة المرور ؟</a>
 											</div>
 											<div class="form-group form-group--submit">
-												<a href="#" class="btn btn-primary-inverse btn-block">Enter to your account</a>
+												<a href="#" class="btn btn-primary-inverse btn-block">أدخل إلى حسابك</a>
 											</div>
 											<div class="modal-form--social">
-												<h6>or Login with your social profile:</h6>
+												<h6>أو قم بتسجيل الدخول باستخدام وسائل التواصل الاجتماعية الخاصة بك</h6>
 												<ul class="social-links social-links--btn text-center">
 													<li class="social-links__item">
 														<a href="#" class="social-links__link social-links__link--lg social-links__link--fb"><i class="fab fa-facebook"></i></a>
@@ -1490,20 +1492,20 @@
 		
 										<!-- Register Form -->
 										<form action="#" class="modal-form">
-											<h5>Register Now!</h5>
+											<h5>سجل الان</h5>
 											<div class="form-group">
-												<input type="email" class="form-control" placeholder="Enter your email address...">
+												<input type="email" class="form-control" placeholder="أدخل بريدك الالكتروني">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Enter your password...">
+												<input type="password" class="form-control" placeholder="أدخل كلمة المرور">
 											</div>
 											<div class="form-group">
-												<input type="password" class="form-control" placeholder="Repeat your password...">
+												<input type="password" class="form-control" placeholder="أعد كلمة المرور الخاصة بك">
 											</div>
 											<div class="form-group form-group--submit">
-												<a href="#" class="btn btn-success btn-block">Create Your Account</a>
+												<a href="#" class="btn btn-success btn-block">أنشئ حسابك</a>
 											</div>
-											<div class="modal-form--note">You’ll receive a confirmation email in your inbox with a link to activate your account. </div>
+											<div class="modal-form--note">ستتلقى رسالة تأكيد بالبريد الإلكتروني في بريدك الوارد تحتوي على رابط لتنشيط حسابك. </div>
 										</form>
 										<!-- Register Form / End -->
 		
@@ -1515,8 +1517,8 @@
 								<!-- Nav tabs -->
 								<div class="nav-tabs-login-wrapper">
 									<ul class="nav nav-tabs nav-justified nav-tabs--login" role="tablist">
-										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">Login</a></li>
-										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">Register</a></li>
+										<li class="nav-item"><a class="nav-link active" href="#tab-login" role="tab" data-toggle="tab">تسجيل الدخول</a></li>
+										<li class="nav-item"><a class="nav-link" href="#tab-register" role="tab" data-toggle="tab">أنشئ حسابك</a></li>
 									</ul>
 								</div>
 								<!-- Nav tabs / End -->

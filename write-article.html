@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Football | Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sports Club, League and News">
+	<meta name="author" content="ARMA Software">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/css/hover.min.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+	<style>
+		.tox-tinymce
+		{
+			border-radius: 15px !important;
+		}
+		.box-layout 
+		{
+			background: #f1f1f1;
+			border-radius: 10px;
+			height: 100%;
+		}
+		.box-layout-white
+		{
+			background: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 5px 1px #ccc;
+			border-radius: 10px;
+		}
+		.player-box
+		{
+			background: #fff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.player-box img
+		{
+			height: 65px;
+		}
+		.nav-pills .nav-link 
+		{
+			border-radius: 0.25rem;
+			background: #042b65;
+			color: #fff;
+			border-radius: 10px;
+			font-size: 12px;
+		}
+		.content-box
+		{
+			background-color: #fff;
+			color: #000;
+			border-radius: 10px;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		#post-title
+		{
+			padding: 5px;
+    		background: #ccc;
+		}
+		.nav-tabs .nav-link 
+		{
+			font-size: 12px;
+		}
+		.rotate
+		{
+			transform: rotate(180deg);
+		}
+		.toggle-avg
+		{
+			display: none;
+		}
+
+		@media (min-width: 768px)
+		{
+			.height-md-800 
+			{
+				min-height: 800px;
+			}
+		}
+	</style>
+</head>
+<body >
+
+	<div class="site-wrapper clearfix">
+		<div class="site-overlay"></div>
+
+		<!-- Header
+		================================================== -->
+		
+		<!-- Header Mobile -->
+		<div class="header-mobile clearfix" id="header-mobile">
+			<div class="header-mobile__logo">
+				<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="" class="header-mobile__logo-img"></a>
+			</div>
+			<div class="header-mobile__inner">
+				<a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+				<span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
+			</div>
+		</div>
+		
+		<!-- Header Desktop -->
+		<header class="header header--layout-1">
+		
+			<!-- Header Primary -->
+			<div class="header__primary">
+				<div class="container">
+					<div class="header__primary-inner">
+		
+						<!-- Header Logo -->
+						<div class="header-logo">
+							<a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo.png" alt="Football" class="header-logo__img" style="width: 120px;"></a>
+						</div>
+						<!-- Header Logo / End -->
+		
+						<!-- Main Navigation -->
+						<nav class="main-nav clearfix">
+							<ul class="main-nav__list">
+								<li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+								<li class=""><a href="stats.html"><i class="fa fa-chart-pie"></i> Stats</a></li>
+								<li class=""><a href="clubs.html"><i class="fa fa-flag"></i> Clubs</a></li>
+								<li class=""><a href="matches.html"><i class="fa fa-futbol"></i> Matches</a></li>
+								<li class=""><a href="compare.html"><i class="fas fa-exchange-alt"></i> Compare</a></li>
+							</ul>
+
+							<!-- Languages -->
+							<ul class="nav-account">
+								<li class="nav-account__item has-children">
+									<span class="main-nav__toggle"></span>
+									<a href="#">Language: <span class="highlight">EN</span></a>
+									<ul class="main-nav__sub">
+										<li><a href="#">English</a></li>
+										<li><a href="index-ar.html">Arabic</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- Languages / End -->
+		
+							<!-- Social Links -->
+							<!-- <ul class="social-links social-links--inline social-links--main-nav">
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul> -->
+							<!-- Social Links / End -->
+		
+							<!-- Pushy Panel Toggle -->
+							<ul class="main-nav__list mx-3">
+								<li class="has-children"><span class="main-nav__toggle"></span><a href="#">
+									<i class="fa fa-user-circle"></i>
+									Me</a>
+									<ul class="main-nav__sub" style="right: 0;">
+										<li class=""><a href="#"><i class="fa fa-user-circle"></i> View Profile</a></li>
+										<li class=""><a href="#"><i class="fa fa-sign-out-alt"></i> Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- Pushy Panel Toggle / Eng -->
+						</nav>
+						<!-- Main Navigation / End -->
+					</div>
+				</div>
+			</div>
+			<!-- Header Primary / End -->
+		
+		</header>
+		<!-- Header / End -->
+
+		
+		<!-- Content
+		================================================== -->
+		<div class="site-content pt-4">
+
+			<section>
+				<div class="container-fluid px-3">
+					<div class="row justify-content-center">
+		
+						<div class="col-xl-3 mb-3 height-md-800">
+							<div class="">
+								<div class="card-body px-3 box-layout-white">
+
+									<!--=================  Avatar  =================-->
+									<div class="d-flex align-items-center mb-2">
+										<a href="#">
+											<div class="">
+												<img class="profile-post" src="assets/images/avatar.png">
+											</div>
+										</a>
+										<div class="my-auto mx-2">
+											<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">User Name</a>
+											<small>1,000 Followers</small>
+										</div>
+									</div>
+
+									<!--=================  Title  =================-->
+									<div class="form-group text-left">
+										<input id="title" type="text" name="title" class="form-control form-control-sm btn-border" placeholder="Title" required>
+									</div>
+
+									<!--=================  Cover  =================-->
+									<div class="form-group text-left" style="position: relative;">
+										<label for="image" class="image-preview pointer" style="background-image: url('assets/images/no-image.png');font-size: 10px;font-weight: 500;line-height: 2;text-align: center; background-color: #fff;">No cover image uploaded, Prees to select Image</label>
+										<input class="btn-info form-control form-control-sm" type="file" accept="image/*" id="image" name="image" style="position: absolute;opacity: 0;top: 0;"/>
+									</div>
+
+									<!--=================  Content  =================-->
+									<div class="form-group text-left">
+										<textarea id="content" class="content" name="content" rows="10" ></textarea>
+									</div>
+
+									<div class="form-group my-2">
+										<button id="view" class="btn btn-primary btn-block btn-border">View</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-xl-9 mb-3 height-md-800">
+							<div class="row"  style="border: 1px solid #ccc;border-radius: 10px; height: 100%;">
+								<div class="col-md-8 p-0">
+									<div class="card-body px-5 box-layout">
+							
+										<!--=================  Type  =================-->
+										<ul class="nav nav-pills mb-5 text-center justify-content-center" id="pills-tab" role="tablist">
+											<li class="nav-item mx-1" style="width: 130px;">
+											<a class="nav-link active" id="pills-post-tab" data-toggle="pill" href="#pills-post" role="tab" aria-controls="pills-post" aria-selected="true">POST</a>
+											</li>
+											<li class="nav-item mx-1" style="width: 130px;margin-left: -1.5rem!important;">
+											<a class="nav-link" id="pills-article-tab" data-toggle="pill" href="#pills-article" role="tab" aria-controls="pills-article" aria-selected="false">ARTICLE</a>
+											</li>
+										</ul>
+
+										<!--=================  Content  =================-->
+										<div class="content-box">
+
+											<!--=================  Avatar  =================-->
+											<div class="d-flex align-items-center mb-2">
+												<a href="#">
+													<div class="">
+														<img class="profile-post" src="assets/images/avatar.png">
+													</div>
+												</a>
+												<div class="my-auto mx-2">
+													<a href="#" class="d-block" style="font-weight: 600;color: #555;line-height: 1;">User Name</a>
+													<small>1,000 Followers</small>
+												</div>
+											</div>
+
+											<hr>
+
+											<!--=================  Cover & Content  =================-->
+											<div class="form-group text-left" style="position: relative;">
+												<label for="image" class="image-preview mb-0" style="background-image: url('assets/images/no-image.png');font-size: 10px;font-weight: 500;line-height: 2;text-align: center; background-color: #fff; border: unset; border-radius: unset; box-shadow: unset;"></label>
+												<h6 id="post-title">title</h6>
+												<div class="post-content">
+
+												</div>
+											</div>
+
+										</div>
+
+										<div class="form-group my-4 pt-4">
+											<button type="submit" class="btn btn-primary btn-block btn-border">Publish</button>
+										</div>
+
+										
+
+									</div>
+								</div>
+
+								<div class="col-md-4 p-0">
+									<div class="">
+										<div class="card-body px-1">
+								
+											<!--=================  Search  =================-->
+											<div class="form-group text-left mb-2">
+												<input id="search" type="text" name="search" class="form-control form-control-sm btn-border" placeholder="Search" required>
+											</div>
+		
+											<!--================= Active Player  =================-->
+											<aside class="widget card widget--sidebar widget-player widget-player--soccer player_stat_card mb-0">
+												<div class="widget__content card__content" style="border-radius: 0px;">
+													<figure class="widget-player__photo">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+													</figure>
+													<header class="widget-player__header clearfix">
+														<div class="widget-player__number">11</div>
+														<h4 class="widget-player__name">
+															<span class="widget-player__first-name">Mohamed</span>
+															<span class="widget-player__first-name">Salah</span>
+														</h4>
+													</header>
+													<div class="widget-player__content">
+														<div class="widget-player__content-inner">
+											
+															<div class="widget-player__stat widget-player__goals" style="width: 33%;">
+																<div class="widget-player__stat-number">20</div>
+																<h6 class="widget-player__stat-label">Goals</h6>
+															</div>
+															<div class="widget-player__stat widget-player__goals" style="width: 33%;">
+																<div class="widget-player__stat-number">10</div>
+																<h6 class="widget-player__stat-label">Assists</h6>
+															</div>
+															<div class="widget-player__stat widget-player__games" style="width: 33%;">
+																<div class="widget-player__stat-number">18</div>
+																<h6 class="widget-player__stat-label">Play</h6>
+															</div>
+														</div>
+											
+														<div class="widget-player__content-alt">
+															<!-- Progress: Shot Accuracy -->
+															<div class="progress-stats">
+																<div class="progress__label">SHOT ACC</div>
+																<div class="progress">
+																	<div class="progress__bar progress__bar--success progress__bar-width-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<div class="progress__number">96%</div>
+															</div>
+															<!-- Progress: Shot Accuracy / End -->
+											
+															<!-- Progress: Pass Accuracy -->
+															<div class="progress-stats">
+																<div class="progress__label">PASS ACC</div>
+																<div class="progress">
+																	<div class="progress__bar progress__bar--success progress__bar-width-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+																</div>
+																<div class="progress__number">74%</div>
+															</div>
+															<!-- Progress: Pass Accuracy / End -->
+														</div>
+													</div>
+											
+												</div>
+											</aside>
+
+											<!-- Widget: Average Rate -->
+											<aside class="widget widget--sidebar card card--has-table widget-leaders">
+
+												<div class="widget__content card__content">
+											
+													<!-- Leader: Points -->
+													<div class="table-responsive">
+														<table class="table team-leader">
+															<thead>
+																<tr style="position: relative;">
+																	<th colspan="2" class="team-leader__type text-center">Avg Rating: 7.68</th>
+																	<i id="toggle-avg" class="fa fa-chevron-circle-down" style="
+																		position: absolute;
+																		top: 30px;
+																		right: 45%;
+																		cursor: pointer;
+																		font-size: 20px;
+																		transition: all 0.3s linear;
+																	"></i>
+																</tr>
+															</thead>
+															<tbody class="toggle-avg">
+																<tr>
+																	<td class="team-leader__player py-1 px-3">
+																		<div class="team-leader__player-info">
+																			<figure class="team-leader__player-img team-leader__player-img--sm">
+																				<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-shabab-fc-riyadh_thumb.png" alt="">
+																			</figure>
+																			<div class="team-leader__player-inner">
+																				<h5 class="team-leader__player-name">Al Shabab FC</h5>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="team-leader__avg py-1 px-3">
+																		<div class="circular">
+																			<div class="circular__bar" data-percent="91">
+																				<span class="circular__percents">9.1</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="team-leader__player py-1 px-3">
+																		<div class="team-leader__player-info">
+																			<figure class="team-leader__player-img team-leader__player-img--sm">
+																				<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-nassr-fc_thumb.png" alt="">
+																			</figure>
+																			<div class="team-leader__player-inner">
+																				<h5 class="team-leader__player-name">Al Nassr FC</h5>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="team-leader__avg py-1 px-3">
+																		<div class="circular">
+																			<div class="circular__bar" data-percent="74">
+																				<span class="circular__percents">7.4</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="team-leader__player py-1 px-3">
+																		<div class="team-leader__player-info">
+																			<figure class="team-leader__player-img team-leader__player-img--sm">
+																				<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-hilal-fc-riyadh_thumb.png" alt="">
+																			</figure>
+																			<div class="team-leader__player-inner">
+																				<h5 class="team-leader__player-name">Al Hilal FC</h5>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="team-leader__avg py-1 px-3">
+																		<div class="circular">
+																			<div class="circular__bar" data-percent="61">
+																				<span class="circular__percents">6.1</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="team-leader__player py-1 px-3">
+																		<div class="team-leader__player-info">
+																			<figure class="team-leader__player-img team-leader__player-img--sm">
+																				<img src="https://cdn.footystats.org/img/teams/saudi-arabia-dhamk-club_thumb.png" alt="">
+																			</figure>
+																			<div class="team-leader__player-inner">
+																				<h5 class="team-leader__player-name">Dhamk Club</h5>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="team-leader__avg py-1 px-3">
+																		<div class="circular">
+																			<div class="circular__bar" data-percent="67">
+																				<span class="circular__percents">6.7</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="team-leader__player py-1 px-3">
+																		<div class="team-leader__player-info">
+																			<figure class="team-leader__player-img team-leader__player-img--sm">
+																				<img src="https://cdn.footystats.org/img/teams/saudi-arabia-al-fateh-sc_thumb.png" alt="">
+																			</figure>
+																			<div class="team-leader__player-inner">
+																				<h5 class="team-leader__player-name">Al Fateh SC</h5>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="team-leader__avg py-1 px-3">
+																		<div class="circular">
+																			<div class="circular__bar" data-percent="59">
+																				<span class="circular__percents">5.9</span>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+											
+															</tbody>
+														</table>
+													</div>
+													<!-- Leader: Points / End -->
+											
+												</div>
+											</aside>
+											<!-- Widget: Team Leaders / End -->
+
+											<hr>
+		
+											<!--================= Players  =================-->
+											<div class="row"  style="height: 275px;overflow: scroll;">
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p61366.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p116535.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/messi.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/ronaldo.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p61366.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p116535.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/messi.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/ronaldo.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p61366.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p116535.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/messi.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="assets/images/ronaldo.png" alt="">
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="player-box">
+														<img src="https://resources.premierleague.com/premierleague/photos/players/110x140/p118748.png" alt="">
+													</div>
+												</div>
+											</div>
+		
+											<hr>
+											<!--=================  Content  =================-->
+											<ul class="nav nav-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+												  <button class="nav-link active" id="section-one-tab" data-toggle="tab" data-target="#section-one" type="button" role="tab" aria-controls="section-one" aria-selected="true">M.Value</button>
+												</li>
+												<li class="nav-item" role="presentation">
+												  <button class="nav-link" id="section-two-tab" data-toggle="tab" data-target="#section-two" type="button" role="tab" aria-controls="section-two" aria-selected="false">Images</button>
+												</li>
+												<li class="nav-item" role="presentation">
+												  <button class="nav-link" id="section-three-tab" data-toggle="tab" data-target="#section-three" type="button" role="tab" aria-controls="section-three" aria-selected="false">Compare</button>
+												</li>
+												<li class="nav-item" role="presentation">
+												  <button class="nav-link" id="section-four-tab" data-toggle="tab" data-target="#section-four" type="button" role="tab" aria-controls="section-four" aria-selected="false">Tables</button>
+												</li>
+											</ul>
+											<div class="tab-content" id="myTabContent">
+												<div class="tab-pane fade show active" id="section-one" role="tabpanel" aria-labelledby="section-one-tab">
+													<p class="text-center my-2">Market Value</p>
+												</div>
+												<div class="tab-pane fade" id="section-two" role="tabpanel" aria-labelledby="section-two-tab">
+													<p class="text-center my-2">Images</p>
+												</div>
+												<div class="tab-pane fade" id="section-three" role="tabpanel" aria-labelledby="section-three-tab">
+													<p class="text-center my-2">Compare</p>
+												</div>
+												<div class="tab-pane fade" id="section-four" role="tabpanel" aria-labelledby="section-four-tab">
+													<p class="text-center my-2">Tables</p>
+												</div>
+											</div>
+		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+				</div>
+
+			</section>
+
+		</div>
+		
+		<!-- Content / End -->
+		
+
+		<!-- Footer
+		================================================== -->
+		<footer id="footer" class="footer">
+		
+			<!-- Footer Secondary -->
+			<div class="footer-secondary">
+				<div class="container">
+					<div class="footer-secondary__inner py-2">
+						<div class="row">
+							<div class="col-12">
+								<p class="text-center m-0 p-0" style="font-weight: bold;font-size: 12pt;color: #fff;font-family: Raleway, sans-serif;padding: 10px 0;">Powered By 
+                                    <a href="https://armasoftware.com/">
+                                        <img width="70" class=" ls-is-cached lazyloaded" data-src="https://armasoftware.com/arma_logo.png" src="https://armasoftware.com/arma_logo.png"> 
+                                    </a>
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Secondary / End -->
+		</footer>
+		<!-- Footer / End -->
+		
+		
+
+	</div>
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script src="https://cdn.tiny.cloud/1/mq6umcdg6y938v1c32lokocdpgrgp5g2yl794h4y1braa6j6/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+	
+	<!-- Template JS -->
+	<script src="assets/js/init.js"></script>
+	<script>
+		AOS.init();
+	</script>
+  	<script>
+		tinymce.init({
+				selector:'textarea.content',
+				menubar: '',
+				plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
+				toolbar: 'undo redo | bold italic underline strikethrough | fontselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+			});
+
+		function readURL(input) 
+		{
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				
+				reader.onload = function (e) 
+				{
+					$('.image-preview').css('background-image','url('+e.target.result+')');
+					$('.image-preview').css('background-size','100%');
+					$('.image-preview').text('');
+				};
+				
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		
+		$("#image").change(function()
+		{
+			readURL(this);
+		});
+		
+        $(document).on("keyup keypress change","#title", function()
+		{
+			var title = $('#title').val();
+			$('#post-title').text(title);
+		});
+		
+		$(document).ready(function() 
+		{
+			$(document).on("click","#view", function()
+			{
+				var content = $('#content_ifr').html();
+				var content1 = $('#content').text();
+				var content2 = $('#content').val();
+				$('.post-content').html(content);
+				console.log(content);
+				console.log(content1);
+				console.log(content2);
+			});
+		});
+		
+        $(document).on("click","#toggle-avg", function()
+		{
+			$('#toggle-avg').toggleClass('rotate');
+			$('.toggle-avg').slideToggle(1000);
+		});
+
+	</script>
+</body>
+</html>
